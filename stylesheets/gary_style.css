@@ -13,25 +13,74 @@ html {
 
 
 
+
+.navlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  backgroun-color: black;
+}
+
+.navlist li{
+  display: inline;
+  margin = 20px;
+  float: left;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 1
+  margin-left: 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.navlist a{
+  text-decoration: none;
+  color: #000000;"
+}
+
+.navlist a:hover {
+  color: white;
+  transition: 0.2s ease;
+}
+
+#nav{
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+#navbar{
+  float: right;
+}
+
+.section{
+  padding-top: 25px;
+}
+
 div#name {
   display: table;
-  font-size: 40px;
+  font-size: 55px;
   margin: 10px auto;
-  font-style: bold;
+}
+div#description {
+  display: table;
+  margin: 10px auto;
 }
 div#socialmedia {
   display: table;
   margin: 10px auto;
 }
 img#smlogo {
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   margin: 0px 2px;
 }
 img#smlogo:hover {
   opacity: 0.6;
 }
-div#bio {
+div#description {
   margin: 10px auto;
   text-align: center;
 }
