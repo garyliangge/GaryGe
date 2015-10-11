@@ -24,20 +24,12 @@ div#socialmedia {
   margin: 10px auto;
 }
 img#smlogo {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   margin: 0px 2px;
 }
 img#smlogo:hover {
-  width: 25px;
-  height: 25px;
-  margin: 0px 2px;
   opacity: 0.6;
-}
-div#LinkedIn {
-  display: table;
-  margin: 10px auto;
-  color: black;
 }
 div#bio {
   margin: 10px auto;
