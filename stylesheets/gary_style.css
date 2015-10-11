@@ -1,5 +1,5 @@
 
-html {
+html{
   width: 100%;
 	height:100%;
   z-index: 0;
@@ -76,7 +76,6 @@ div#filter{
   background-color: rgba(255, 255, 255, .5)
 }
 
-
 div#title{
   position: relative;
   margin: 200px auto
@@ -121,26 +120,35 @@ div#socialmedia {
   position: absolute;
   float: bottom;
   display: table;
-  margin: 10px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 450px;
 }
+
 img#smlogo {
-  width: 32px;
-  height: 32px;
-  margin: 0px 2px;
-}
-img#smlogo:hover {
+  width: 45px;
+  height: 45px;
+  margin: 10px 12px;
   opacity: 0.6;
 }
+
+img#smlogo:hover {
+  opacity: 1;
+}
+
 div#description {
   margin: 10px auto;
   text-align: center;
 }
+
 div#name {
   opacity:1;
 }
+
 div#contact {
   color:beige;
 }
+
 div#button {
   cursor: pointer;
   margin: 10px auto;
