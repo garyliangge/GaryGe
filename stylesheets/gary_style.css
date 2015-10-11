@@ -1,7 +1,6 @@
 html{
   z-index: 0;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-
 }
 
 #nav{
@@ -66,7 +65,7 @@ div#filter1{
   left: 0px;
   top: 0px;
   /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
-  background-color: rgba(255, 255, 255, .2)
+  background-color: rgba(255, 255, 255, .4)
 }
 
 div#filter2{
@@ -91,7 +90,7 @@ div#home{
 div#title{
   position: relative;
   margin: 250px auto;
-  color: white;
+  color: black;
 }
 
 div#name {
@@ -99,10 +98,12 @@ div#name {
   font-size: 100px;
   margin: 20px auto;
 }
+
 div#description {
   display: table;
   font-size: 30px;
   margin: 20px auto;
+  text-align: center;
 }
 
 div#resume{
@@ -129,13 +130,24 @@ div#contact{
 	background-size: cover;
 }
 
+div#profile{
+  margin-left: auto;
+  display: table;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+img#propic{
+  width: 275px;
+  height: 275px;
+}
+
 div#socialmedia {
   position: absolute;
-  float: bottom;
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 525px;
+  margin-top: 50px;
 }
 
 img#smlogo {
@@ -151,24 +163,4 @@ img#smlogo:hover {
   -ms-transform: scale(1.3);
   transform: scale(1.3);
   transition: all 0.2s ease;
-}
-
-div#description {
-  margin: 10px auto;
-  text-align: center;
-}
-
-div#name {
-  opacity:1;
-}
-
-div#contact {
-  color:beige;
-}
-
-div#button {
-  cursor: pointer;
-  margin: 10px auto;
-  display: table;
-  opacity: 1;
 }
