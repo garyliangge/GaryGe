@@ -7,8 +7,8 @@ html{
   width: 100%;
   height: 28px;
   position: fixed;
-  top: 0;
-  right: 0;
+  top: 0px;
+  right: 0px;
   padding: 10px;
   background-color: black;
   opacity: 1;
@@ -22,21 +22,19 @@ html{
 
 .navlist {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px 0px;
+  padding: 0px;
 }
 
 .navlist li{
   display: inline;
   margin = 20px;
-  float: left;
   padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
   opacity: 1
   margin-left: 25px;
-  font-size: 18px;
-  cursor: pointer;
+  font-size: 20px;
 }
 
 .navlist a{
@@ -57,7 +55,7 @@ html{
   margin: 0px 0px;
 }
 
-div#filter1{
+div#filter-white{
   display: block;
   width: 100%;
   height: 100%;
@@ -65,10 +63,10 @@ div#filter1{
   left: 0px;
   top: 0px;
   /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
-  background-color: rgba(255, 255, 255, .4)
+  background-color: rgba(255, 255, 255, .5)
 }
 
-div#filter2{
+div#filter-black{
   display: block;
   width: 100%;
   height: 100%;
@@ -77,6 +75,17 @@ div#filter2{
   top: 0px;
   /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
   background-color: rgba(0, 0, 0, .5)
+}
+
+div#filter-blue{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
+  background-color: rgba(0, 111, 255, .3)
 }
 
 div#home{
@@ -95,7 +104,7 @@ div#title{
 
 div#name {
   display: table;
-  font-size: 100px;
+  font-size: 120px;
   margin: 20px auto;
 }
 
@@ -107,39 +116,30 @@ div#description {
 }
 
 div#resume{
-	-webkit-background-size: cover;
   background-color: #ABC;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 }
 
-div#projects{
-  background-color: #DBA;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+div#research{
+  background: url('../images/backgrounds/simons.jpg') center top no-repeat fixed;
+  background-size: cover;
 }
 
 div#contact{
   background: url("../images/backgrounds/campanile.jpg") center top no-repeat fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 }
 
 div#profile{
-  margin-left: auto;
   display: table;
+  margin-left: auto;
   margin-right: auto;
   margin-top: 150px;
 }
 
 img#propic{
-  width: 275px;
-  height: 275px;
+  width: 300px;
+  height: 300px;
 }
 
 div#socialmedia {
