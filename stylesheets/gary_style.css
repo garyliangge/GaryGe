@@ -236,12 +236,18 @@ div#contact{
 	background-size: cover;
 }
 
+div#quote{
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
+
 div#socialmedia {
   position: absolute;
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 img#smlogo {
