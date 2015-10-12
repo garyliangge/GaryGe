@@ -49,7 +49,7 @@ body{
 
 a{
   text-decoration: none;
-  color: black;"
+  color: black;
 }
 
 .navlist a:hover {
@@ -98,9 +98,8 @@ div#filter-red{
   position: absolute;
   left: 0px;
   top: 0px;
-  /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
-  /*background-color: rgba(0, 111, 255, .5)*/
-  background-color: rgba(204, 0, 0, .5)
+  background: linear-gradient(90deg, rgba(0, 130, 190, 0.50) 20%, rgba(10, 70, 100, 0.30) 80%);
+  /*background-color: rgba(204, 0, 0, .5)*/
 }
 
 div#home{
@@ -190,7 +189,7 @@ div#chevron {
   color: transparent;
 }
  50% {
-   color: white;
+   color: black;
  }
 }
 
@@ -251,8 +250,8 @@ div#socialmedia {
 }
 
 img#smlogo {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   margin: 10px 35px;
   opacity: 1;
   transition: all 0.2s ease;
