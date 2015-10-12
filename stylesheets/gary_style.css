@@ -106,7 +106,7 @@ div#title{
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 225px;
+  margin-top: 180px;
   color: black;
 }
 
@@ -128,7 +128,7 @@ div#chevron {
   font-size: 100px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: center;
 }
 
@@ -145,7 +145,7 @@ div#chevron {
   color: transparent;
 }
  50% {
-    color: white;
+    color: black;
  }
 }
 
@@ -154,7 +154,7 @@ div#chevron {
   color: transparent;
 }
  50% {
-   color: white;
+   color: black;
  }
 }
 
@@ -163,7 +163,7 @@ div#chevron {
   color: transparent;
 }
  50% {
-   color: white;
+   color: black;
  }
 }
 
@@ -172,7 +172,7 @@ div#chevron {
   color: transparent;
 }
  50% {
-   color: white;
+   color: black;
  }
 }
 
