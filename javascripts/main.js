@@ -15,4 +15,11 @@ $(document).ready(function()
       // Call the scroll function
       goToByScroll(this.id);
     });
+
+    $("#chevron > a").click(function(e) {
+      // Prevent a page reload when a link is pressed
+      e.preventDefault();
+      // Call the scroll function
+      goToByScroll(this.id);
+    });
 });

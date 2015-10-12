@@ -19,6 +19,7 @@ body{
   background-color: white;
   opacity: 1;
   z-index: 1;
+  font-family: 'Quicksand', sans-serif;
 }
 
 #navbar{
@@ -41,7 +42,7 @@ body{
   font-size: 20px;
 }
 
-.navlist a{
+a{
   text-decoration: none;
   color: black;"
 }
@@ -103,7 +104,9 @@ div#home{
 
 div#title{
   position: relative;
-  margin: 250px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 225px;
   color: black;
 }
 
@@ -113,7 +116,6 @@ div#name {
   margin: 20px auto;
   font-family: 'Quicksand', sans-serif;
 }
-
 div#description {
   display: table;
   font-size: 30px;
@@ -121,24 +123,72 @@ div#description {
   text-align: center;
 }
 
-div#resume{
-	background-size: cover;
-}
-
-div#research{
-  background: url('../images/backgrounds/sbu2.jpg') center top no-repeat fixed;
-  background-size: cover;
-}
-
-.content{
-  display: table;
+div#chevron {
+  position: table;
+  font-size: 100px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 80px;
+  text-align: center;
 }
 
-div#contact{
-  background: url("../images/backgrounds/campanile.jpg") center top no-repeat fixed;
+.blinking{
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from,to {
+  color: transparent;
+}
+ 50% {
+    color: white;
+ }
+}
+
+@-moz-keyframes blink {
+  from,to {
+  color: transparent;
+}
+ 50% {
+   color: white;
+ }
+}
+
+@-webkit-keyframes "blink" {
+  from,to {
+  color: transparent;
+}
+ 50% {
+   color: white;
+ }
+}
+
+@-ms-keyframes "blink" {
+  from,to {
+  color: transparent;
+}
+ 50% {
+   color: white;
+ }
+}
+
+@-o-keyframes "blink" {
+  from,to {
+  color: transparent;
+}
+ 50% {
+   color: white;
+ }
+}
+
+div#about{
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
 }
 
@@ -154,18 +204,41 @@ img#propic{
   height: 300px;
 }
 
-div#socialmedia {
-  position: absolute;
+div#research{
+  background: url('../images/backgrounds/sbu2.jpg') center top no-repeat fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.content{
   display: table;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
 }
 
+div#contact{
+  background: url("../images/backgrounds/campanile.jpg") center top no-repeat fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div#socialmedia {
+  position: absolute;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
+}
+
 img#smlogo {
-  width: 64px;
-  height: 64px;
-  margin: 10px 20px;
+  width: 90px;
+  height: 90px;
+  margin: 10px 35px;
   opacity: 1;
   transition: all 0.2s ease;
 }
