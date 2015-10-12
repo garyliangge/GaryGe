@@ -53,7 +53,7 @@ a{
 }
 
 .navlist a:hover {
-  color: gold;
+  /*color: gold;*/
   transition: 0.2s ease;
 }
 
