@@ -98,7 +98,7 @@ div#filter-red{
   position: absolute;
   left: 0px;
   top: 0px;
-  background: linear-gradient(90deg, rgba(0, 130, 190, 0.50) 20%, rgba(10, 70, 100, 0.30) 80%);
+  background: linear-gradient(135deg, rgba(0, 130, 190, 0.60) 20%, rgba(10, 70, 100, 0.20) 80%);
   /*background-color: rgba(204, 0, 0, .5)*/
 }
 
