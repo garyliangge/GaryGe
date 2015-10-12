@@ -23,6 +23,8 @@ $(document).ready(function()
       e.preventDefault();
       // Call the scroll function
       goToByScroll(this.id);
+      $('#navbar > ul > li > a').removeClass('active');
+      $('#aboutlink').addClass('active');
     });
 
     $(window).scroll(function() {
