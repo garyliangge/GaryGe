@@ -16,10 +16,15 @@ body{
   top: 0px;
   right: 0px;
   padding: 10px;
-  background-color: white;
-  opacity: 1;
   z-index: 1;
   font-family: 'Quicksand', sans-serif;
+  transition: 0.3s ease;
+}
+
+.opaque{
+  background-color: white;
+  opacity: 1;
+  transition: 0.3s ease;
 }
 
 #navbar{
@@ -50,6 +55,10 @@ a{
 .navlist a:hover {
   color: gold;
   transition: 0.2s ease;
+}
+
+.active{
+  color: gold;
 }
 
 .section{

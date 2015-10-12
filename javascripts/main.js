@@ -14,6 +14,8 @@ $(document).ready(function()
       e.preventDefault();
       // Call the scroll function
       goToByScroll(this.id);
+      $('#navbar > ul > li > a').removeClass('active');
+      $(this).addClass('active');
     });
 
     $("#chevron > a").click(function(e) {
@@ -21,5 +23,13 @@ $(document).ready(function()
       e.preventDefault();
       // Call the scroll function
       goToByScroll(this.id);
+    });
+
+    $(window).scroll(function() {
+      if($(this).scrollTop() == 0) {
+          $('#nav').removeClass('opaque');
+      } else {
+          $('#nav').addClass('opaque');
+      }
     });
 });
