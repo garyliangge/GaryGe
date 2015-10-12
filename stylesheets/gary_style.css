@@ -2,7 +2,7 @@ html{
   width: 100%;
   height: 100%;
   z-index: 0;
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 body{
@@ -11,12 +11,12 @@ body{
 
 #nav{
   width: 100%;
-  height: 28px;
+  height: 20px;
   position: fixed;
   top: 0px;
   right: 0px;
   padding: 10px;
-  background-color: black;
+  background-color: white;
   opacity: 1;
   z-index: 1;
 }
@@ -35,17 +35,15 @@ body{
 .navlist li{
   display: inline;
   margin = 20px;
-  padding-bottom: 15px;
   padding-left: 15px;
   padding-right: 15px;
-  opacity: 1
-  margin-left: 25px;
+  opacity: 1;
   font-size: 20px;
 }
 
 .navlist a{
   text-decoration: none;
-  color: white;"
+  color: black;"
 }
 
 .navlist a:hover {
@@ -83,7 +81,7 @@ div#filter-black{
   background-color: rgba(0, 0, 0, .5)
 }
 
-div#filter-blue{
+div#filter-red{
   display: block;
   width: 100%;
   height: 100%;
@@ -113,6 +111,7 @@ div#name {
   display: table;
   font-size: 120px;
   margin: 20px auto;
+  font-family: 'Quicksand', sans-serif;
 }
 
 div#description {
@@ -123,12 +122,11 @@ div#description {
 }
 
 div#resume{
-  background-color: #ABC;
 	background-size: cover;
 }
 
 div#research{
-  background: url('../images/backgrounds/sbu.jpg') center top no-repeat fixed;
+  background: url('../images/backgrounds/sbu2.jpg') center top no-repeat fixed;
   background-size: cover;
 }
 
@@ -171,7 +169,6 @@ img#smlogo {
   opacity: 1;
   transition: all 0.2s ease;
 }
-
 img#smlogo:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
