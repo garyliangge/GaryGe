@@ -251,9 +251,9 @@ div#socialmedia {
 }
 
 img#smlogo {
-  width: 80px;
-  height: 80px;
-  margin: 10px 35px;
+  width: 75px;
+  height: 75px;
+  margin: 10px 40px;
   opacity: 1;
   transition: all 0.2s ease;
 }
