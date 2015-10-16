@@ -201,15 +201,44 @@ div#about{
 }
 
 div#profile{
-  display: table;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 150px;
+  margin-top: 175px;
+  text-align: justify;
+  width: 80%;
 }
 
 img#propic{
+  padding-right: 50px;
+  float: left;
   width: 300px;
   height: 300px;
+}
+
+div#bio{
+  float: left;
+  font-size: 18px;
+  width: 650px;
+  padding-bottom: 30px;
+}
+
+a#resume{
+  font-size: 20px;
+  text-align: center;
+  color: gray;
+  background-color: white;
+  padding: 10px 40px;
+  border: 3px solid gray;
+  margin: 10px auto;
+  transition: all 0.2s ease;
+  font-family: 'Quicksand';
+}
+
+a#resume:hover{
+  color: white;
+  background-color: gray;
+  transition: all 0.2s ease;
 }
 
 div#research{
@@ -218,6 +247,7 @@ div#research{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+  height: 875px;
 }
 
 .content{
