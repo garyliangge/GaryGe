@@ -18,10 +18,15 @@ body{
   padding: 10px;
   z-index: 1;
   font-family: 'Quicksand', sans-serif;
+}
+
+.transparent{
+  color: white;
   transition: 0.3s ease;
 }
 
 .opaque{
+  color: black;
   background-color: white;
   opacity: 1;
   transition: 0.3s ease;
@@ -36,7 +41,6 @@ body{
   list-style-type: none;
   margin: 0px 0px;
   padding: 0px;
-  color: black;
 }
 
 .navlist li{
@@ -50,7 +54,7 @@ body{
 
 a{
   text-decoration: none;
-  color: black;
+  color: inherit;
 }
 
 .navlist a:hover {
@@ -65,9 +69,18 @@ a{
 .section{
   width: 100%;
   height: 100%;
-	min-height:720px;
+	min-height:100vh;
   position: relative;
   margin: 0px 0px;
+}
+
+div#filter-none{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
 }
 
 div#filter-white{
@@ -78,7 +91,7 @@ div#filter-white{
   left: 0px;
   top: 0px;
   /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
-  background-color: rgba(255, 255, 255, .5)
+  background-color: rgba(255, 255, 255, .2)
 }
 
 div#filter-black{
@@ -92,22 +105,24 @@ div#filter-black{
   background-color: rgba(0, 0, 0, .5)
 }
 
-div#filter-red{
+div#filter-blue{
   display: block;
   width: 100%;
   height: 100%;
   position: absolute;
   left: 0px;
   top: 0px;
-  background: linear-gradient(110deg, rgba(0, 130, 190, 0.8) 20%, rgba(10, 70, 100, 0.20) 80%);
+  background: linear-gradient(110deg, rgba(0, 130, 200, 0.7) 20%, rgba(10, 40, 100, 0.40) 80%);
 }
+
+/*----------Home Section----------*/
 
 div#home{
   background: url("../images/backgrounds/sunset.jpg") center top no-repeat fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 div#title{
@@ -115,15 +130,16 @@ div#title{
   margin-left: auto;
   margin-right: auto;
   margin-top: 180px;
-  color: black;
+  color: white;
 }
 
 div#name {
   display: table;
-  font-size: 120px;
+  font-size: 150px;
   margin: 20px auto;
   font-family: 'Quicksand', sans-serif;
 }
+
 div#description {
   display: table;
   font-size: 30px;
@@ -193,6 +209,8 @@ div#chevron {
  }
 }
 
+/*----------About Section----------*/
+
 div#about{
   -webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -220,17 +238,17 @@ div#bio{
   float: left;
   font-size: 18px;
   width: 650px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 a#resume{
-  font-size: 20px;
-  text-align: center;
   color: gray;
+  line-height: 3;
+  font-size: 18px;
+  text-align: center;
   background-color: white;
-  padding: 10px 40px;
+  padding: 8px 35px;
   border: 3px solid gray;
-  margin: 10px auto;
   transition: all 0.2s ease;
   font-family: 'Quicksand';
 }
@@ -240,6 +258,8 @@ a#resume:hover{
   background-color: gray;
   transition: all 0.2s ease;
 }
+
+/*----------Research Section----------*/
 
 div#research{
   background: url('../images/backgrounds/sbu2.jpg') center top no-repeat fixed;
@@ -257,6 +277,8 @@ div#research{
   margin-top: 65px;
 }
 
+/*----------Contact Section----------*/
+
 div#contact{
   background: url("../images/backgrounds/campanile.jpg") center top no-repeat fixed;
   -webkit-background-size: cover;
@@ -265,18 +287,12 @@ div#contact{
 	background-size: cover;
 }
 
-div#quote{
-  color: white;
-  text-align: center;
-  margin-top: 275px;
-}
-
 div#socialmedia {
   position: absolute;
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 img#smlogo {

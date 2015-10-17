@@ -18,7 +18,9 @@ $(document).ready(function()
       onScroll();
       if($(this).scrollTop() == 0) {
           $('#nav').removeClass('opaque');
+          $('#nav').addClass('transparent');
       } else {
+          $('#nav').removeClass('transparent');
           $('#nav').addClass('opaque');
       }
     });
