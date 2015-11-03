@@ -91,7 +91,7 @@ div#filter-white{
   left: 0px;
   top: 0px;
   /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
-  background-color: rgba(255, 255, 255, .2)
+  background-color: rgba(255, 255, 255, .1)
 }
 
 div#filter-black{
@@ -102,7 +102,7 @@ div#filter-black{
   left: 0px;
   top: 0px;
   /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
-  background-color: rgba(0, 0, 0, .4)
+  background-color: rgba(0, 0, 0, .5)
 }
 
 div#filter-blue{
@@ -113,6 +113,17 @@ div#filter-blue{
   left: 0px;
   top: 0px;
   background: linear-gradient(110deg, rgba(0, 130, 200, 0.7) 20%, rgba(10, 40, 100, 0.40) 80%);
+}
+
+div#filter-sepia{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
+  background-color: rgba(112, 66, 20, .3)
 }
 
 /*----------Home Section----------*/
@@ -136,10 +147,8 @@ div#name{
   font-family: 'Roboto';
   font-weight: 590;
   font-size: 135px;
-  letter-spacing: 0.6vw;
-  padding-bottom: 1vh;
+  padding-bottom: 0.5vh;
 }
-
 
 a#resume{
   color: white;
@@ -163,7 +172,7 @@ div#chevron {
   position: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 18vh;
+  margin-top: 20vh;
   color: white;
   text-align: center;
 }
@@ -183,10 +192,32 @@ i#chevron:hover {
 /*----------Projects Section----------*/
 
 div#projects{
+  background: url("../images/backgrounds/laptop.jpg") center top no-repeat fixed;
   -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+}
+
+div#proj_list{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10vh;
+}
+
+.proj{
+  width: 95vw;
+  height: 40vh;
+  color: white;
+  margin-bottom: 5vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+div#proj_title{
+  height: 20%;
+  background-color: black;
+  text-align: center;
 }
 
 
