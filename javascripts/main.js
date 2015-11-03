@@ -36,13 +36,16 @@ function goToByScroll(id){
 }
 
 function onScroll() {
-    var scrollPos = $(document).scrollTop();
+    var scrollPos = Math.floor($(document).scrollTop());
     $("#navbar a").each(function() {
       var refId = $(this).attr("id");
+      var refSecId = $(this).attr("id");
       refId = "#".concat(refId.replace("link", ""));
+      refSecId = "#".concat(refSecId.replace("link", "_content"))
       var refElement = $(refId);
-      if (refElement.position().top <= scrollPos &&
-          refElement.position().top + refElement.height() > scrollPos) {
+      var refSecElement = $(refSecId);
+      if (Math.floor(refElement.position().top) <= scrollPos &&
+          Math.floor(refElement.position().top + refElement.height() + refSecElement.height()) > scrollPos) {
         $("#navbar > ul > li > a").removeClass("active");
         $(this).addClass("active");
       } else {
