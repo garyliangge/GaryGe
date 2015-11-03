@@ -156,7 +156,7 @@ div#name{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 18vh;
+  margin-top: 26vh;
   color: white;
   font-family: 'Josefin Sans';
   font-weight: 600;
@@ -169,6 +169,7 @@ a#resume{
   line-height: 3;
   font-size: 18px;
   text-align: center;
+  margin-top: 0vh;
   background-color: rgba(0, 0, 0, 0);
   padding: 8px 35px;
   border: 3px solid white;
@@ -186,7 +187,7 @@ div#chevron {
   position: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20vh;
+  margin-top: 16vh;
   color: white;
   text-align: center;
 }
