@@ -173,8 +173,8 @@ a#resume{
   background-color: rgba(0, 0, 0, 0);
   padding: 8px 35px;
   border: 3px solid white;
-  transition: all 0.2s ease;
   font-family: 'Quicksand';
+  transition: all 0.2s ease;
 }
 
 a#resume:hover{
@@ -206,7 +206,7 @@ i#chevron:hover {
 
 /*----------Projects Section----------*/
 
-div#projects_content{
+div#projects_body{
   background: url("../images/backgrounds/laptop.jpg") center top no-repeat fixed;
   -webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -239,9 +239,19 @@ div#proj_title{
   font-size: 30px;
 }
 
+.proj_link{
+  color: white;
+  transition: all 0.1s ease;
+}
+
+.proj_link:hover{
+  color: rgba(160, 160, 160, 1);
+  transition: all 0.1s ease;
+}
+
 /*----------Research Section----------*/
 
-div#research_content{
+div#research_body{
   background: url('../images/backgrounds/sbu2.jpg') center top no-repeat fixed;
   -webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -254,12 +264,12 @@ div#research_content{
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 65px;
+  margin-top: 50px;
 }
 
 /*----------Contact Section----------*/
 
-div#contact_content{
+div#contact_body{
   background: url("../images/backgrounds/campanile.jpg") center top no-repeat fixed;
   -webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -268,8 +278,8 @@ div#contact_content{
 }
 
 img#propic{
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
 }
 
 div#socialmedia {
@@ -277,7 +287,7 @@ div#socialmedia {
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 img#smlogo {

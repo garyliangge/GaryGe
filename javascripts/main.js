@@ -41,7 +41,7 @@ function onScroll() {
       var refId = $(this).attr("id");
       var refSecId = $(this).attr("id");
       refId = "#".concat(refId.replace("link", ""));
-      refSecId = "#".concat(refSecId.replace("link", "_content"))
+      refSecId = "#".concat(refSecId.replace("link", "_body"))
       var refElement = $(refId);
       var refSecElement = $(refSecId);
       if (Math.floor(refElement.position().top) <= scrollPos &&
