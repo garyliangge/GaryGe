@@ -207,7 +207,7 @@ div#proj_list{
 }
 
 .proj{
-  width: 95vw;
+  width: 90vw;
   height: 40vh;
   color: white;
   margin-bottom: 5vh;
@@ -215,12 +215,14 @@ div#proj_list{
 }
 
 div#proj_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 20%;
   background-color: black;
-  text-align: center;
+  font-family: "Quicksand";
+  font-size: 30px;
 }
-
-
 
 /*----------Research Section----------*/
 
