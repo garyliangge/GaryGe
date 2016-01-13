@@ -35,11 +35,11 @@ function goToByScroll(id){
 function onScroll() {
   // Change color of navbar
   if($(this).scrollTop() == 0) {
-    $('#nav').removeClass('opaque');
-    $('#nav').addClass('transparent');
+    $('#nav').removeClass("opaque");
+    $('#nav').addClass("transparent");
   } else {
-    $('#nav').removeClass('transparent');
-    $('#nav').addClass('opaque');
+    $('#nav').removeClass("transparent");
+    $('#nav').addClass("opaque");
   }
 
   //Check active section
@@ -53,10 +53,10 @@ function onScroll() {
     var refSecElement = $(refSecId);
     if (Math.floor(refElement.position().top) <= scrollPos &&
       Math.floor(refElement.position().top + refElement.height() + refSecElement.height()) > scrollPos) {
-      $("#navbar > ul > li > a").removeClass("active");
-      $(this).addClass("active");
+      $("#navbar > ul > li > a").removeClass("viewing");
+      $(this).addClass("viewing");
     } else {
-      $(this).removeClass("active");
+      $(this).removeClass("viewing");
     }
   });
 }
@@ -77,7 +77,7 @@ function checkResize() {
     document.getElementById("research_description").style.width = Math.min(665, width*.9)+"px";
     document.getElementById("publications").style.width = width*.9+"px";
 
-  }else{
+  } else {
 
     document.getElementById("flowchart").style.display = "table";
     document.getElementById("sbu_logo").style.width = Math.min(400, width*.3)+"px";
@@ -85,5 +85,15 @@ function checkResize() {
     document.getElementById("publications").style.width = width*.7+"px";
 
   }
+
+  //toggle navbar formats
+  if((width/height) < 1.8) {
+    document.getElementById("navlist").style.display = "none";
+    document.getElementById("nav-menu").style.display = "inline";
+  } else {
+    document.getElementById("navlist").style.display = "inline";
+    document.getElementById("nav-menu").style.display = "none";
+  }
+
   document.getElementById("chevron").style.display = (width/height) < 1 ? "none" : "table";
 }

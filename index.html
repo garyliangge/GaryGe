@@ -6,8 +6,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Gary Ge</title>
       <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'>
-      <link rel="stylesheet" href="stylesheets/gary_style.css" type="text/css" media=screen>
+      <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media=screen>
       <link rel="stylesheet" href="stylesheets/font-awesome.min.css" type="text/css" media=screen>
+      <link rel="stylesheet" href="stylesheets/gary_style.css" type="text/css" media=screen>
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
       <script src="javascripts/main.js"></script>
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -17,14 +18,18 @@
       <!---Nav Section-------->
 
       <nav id="nav" class="transparent">
-          <div id="navbar">
-              <ul class="navlist">
-                <li><a id="homelink" href="#" class="active">Home</a></li>
+          <div id="navbar" role="navigation">
+              <div id="nav-menu">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+              </div>
+              <ul id="navlist">
+                <li><a id="homelink" href="#" class="viewing">Home</a></li>
                 <li><a id="projectslink" href="#">Projects</a></li>
                 <li><a id="researchlink" href="#">Research</a></li>
                 <li><a id="contactlink" href="#">Contact</a></li>
               </ul>
           </div>
+
       </nav>
 
       <!---Home Section-------->
