@@ -21,7 +21,7 @@ $(document).ready(function()
 });
 
 function setInitialSize() {
-    alert(window.innerWidth/window.innerHeight);
+    alert("Ratio: " + (window.innerWidth/window.innerHeight) + " Width: " + window.innerWidth);
 }
 
 function goToByScroll(id){
