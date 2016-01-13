@@ -63,5 +63,11 @@ function onScroll() {
 }
 
 function checkResize() {
+    width, height = window.innerWidth, window.innerHeight;
+    if (width/height < 1.5) {
+        document.getElementById("sbu_logo").style.height = min(300, width*.6)+"px";
+    }else{
+        document.getElementById("sbu_logo").style.height = min(300, width*.4)+"px";
+    }
     alert(window.innerWidth/window.innerHeight);
 }
