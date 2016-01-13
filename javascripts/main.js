@@ -62,8 +62,8 @@ function onScroll() {
 }
 
 function setInitialSize() {
-  alert("Ratio: " + (window.innerWidth/window.innerHeight) + " Width: " + window.innerWidth);
-  // checkResize();
+  // alert("Ratio: " + (window.innerWidth/window.innerHeight) + " Width: " + window.innerWidth);
+  checkResize();
 }
 
 function checkResize() {
@@ -71,12 +71,19 @@ function checkResize() {
   height = window.innerHeight;
   // alert("Ratio: " + (width/height) + " Width: " + width);
   if ((width/height) < 1.5) {
+
     document.getElementById("flowchart").style.display = "none";
-    document.getElementById("sbu_logo").style.width = Math.min(300, width*.6)+"px";
+    document.getElementById("sbu_logo").style.width = Math.min(400, width*.6)+"px";
+    document.getElementById("research_description").style.width = Math.min(665, width*.9)+"px";
+    // document.getElementById("research_body").style.height = "100px";
 
   }else{
+
     document.getElementById("flowchart").style.display = "table";
-    document.getElementById("sbu_logo").style.width = Math.min(300, width*.3)+"px";
+    document.getElementById("sbu_logo").style.width = Math.min(400, width*.3)+"px";
+    document.getElementById("research_description").style.width = Math.min(665, width*.52)+"px";
+    // document.getElementById("research_body").style.height = "875px";
 
   }
+  document.getElementById("chevron").style.display = (width/height) < 1 ? "none" : "table";
 }
