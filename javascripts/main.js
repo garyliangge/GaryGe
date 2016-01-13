@@ -73,14 +73,14 @@ function checkResize() {
   if ((width/height) < 1.5) {
 
     document.getElementById("flowchart").style.display = "none";
-    document.getElementById("sbu_logo").style.width = Math.min(400, width*.6)+"px";
+    document.getElementById("sbu_logo").style.width = width*.6+"px";
     document.getElementById("research_description").style.width = Math.min(665, width*.9)+"px";
     document.getElementById("publications").style.width = width*.9+"px";
 
   } else {
 
     document.getElementById("flowchart").style.display = "table";
-    document.getElementById("sbu_logo").style.width = Math.min(400, width*.3)+"px";
+    document.getElementById("sbu_logo").style.width = width*.3+"px";
     document.getElementById("research_description").style.width = Math.min(665, width*.52)+"px";
     document.getElementById("publications").style.width = width*.7+"px";
 
