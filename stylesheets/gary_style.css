@@ -281,6 +281,14 @@ div#research_body{
   margin-top: 50px;
 }
 
+img#sbu_logo{
+  width: 300px;
+}
+
+img#flowchart{
+  display: table;
+}
+
 /*----------Contact Section----------*/
 
 div#contact_body{
