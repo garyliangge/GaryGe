@@ -87,7 +87,7 @@ function checkResize() {
   }
 
   //toggle navbar formats
-  if((width/height) < 1.8) {
+  if((width/height) < 1) {
     document.getElementById("navlist").style.display = "none";
     document.getElementById("nav-menu").style.display = "inline";
   } else {
@@ -95,5 +95,6 @@ function checkResize() {
     document.getElementById("nav-menu").style.display = "none";
   }
 
+  //toggle chevron display
   document.getElementById("chevron").style.display = (width/height) < 1 ? "none" : "table";
 }
