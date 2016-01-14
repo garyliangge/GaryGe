@@ -102,10 +102,12 @@ function checkResize() {
 function onMenuClicked() {
   // alert(menu_selected);
   if(menu_selected) {
+    $('body').removeClass("noscroll");
     $('#menu').addClass("menu-collapsed");
     $('#nav').removeClass("hold-opaque");
     menu_selected = false;
   } else {
+    $('body').addClass("noscroll");
     $('#menu').removeClass("menu-collapsed");
     $('#nav').addClass("hold-opaque");
     menu_selected = true;
