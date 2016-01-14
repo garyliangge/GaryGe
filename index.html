@@ -20,7 +20,9 @@
       <nav id="nav" class="transparent">
           <div id="navbar" role="navigation">
               <div id="nav-menu">
-                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                <button onclick="onMenuClicked()" Style="padding: 0; border: none; background: none;">
+                  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                </button>
               </div>
               <ul id="navlist">
                 <li><a id="homelink" href="#" class="viewing">Home</a></li>
@@ -29,8 +31,20 @@
                 <li><a id="contactlink" href="#">Contact</a></li>
               </ul>
           </div>
-
       </nav>
+
+      <!---Cover Menu-------->
+
+      <div id="menu" class="menu-collapsed">
+          <!-- <div id="menu-container"> -->
+            <ul id="menu-list">
+              <li><a id="homelink" href="#" class="viewing">Home</a></li>
+              <li><a id="projectslink" href="#">Projects</a></li>
+              <li><a id="researchlink" href="#">Research</a></li>
+              <li><a id="contactlink" href="#">Contact</a></li>
+            </ul>
+          <!-- </div> -->
+      </div>
 
       <!---Home Section-------->
 

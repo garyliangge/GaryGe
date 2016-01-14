@@ -18,10 +18,11 @@ $(document).ready(function()
 
   $(window).scroll(onScroll);
 
-  setInitialSize();
+  checkResize();
 
 });
 
+var menu_selected = false;
 
 function goToByScroll(id){
   // Remove "link" from the ID
@@ -61,10 +62,6 @@ function onScroll() {
   });
 }
 
-function setInitialSize() {
-  // alert("Ratio: " + (window.innerWidth/window.innerHeight) + " Width: " + window.innerWidth);
-  checkResize();
-}
 
 function checkResize() {
   width = window.innerWidth;
@@ -93,8 +90,25 @@ function checkResize() {
   } else {
     document.getElementById("navlist").style.display = "inline";
     document.getElementById("nav-menu").style.display = "none";
+    //Close dropdown menu, if open
+    menu_selected = true;
+    onMenuClicked();
   }
 
   //toggle chevron display
   document.getElementById("chevron").style.display = (width/height) < 1 ? "none" : "table";
+}
+
+function onMenuClicked() {
+  // alert(menu_selected);
+  if(menu_selected) {
+    $('#menu').addClass("menu-collapsed");
+    $('#nav').removeClass("hold-opaque");
+    menu_selected = false;
+  } else {
+    $('#menu').removeClass("menu-collapsed");
+    $('#nav').addClass("hold-opaque");
+    menu_selected = true;
+  }
+
 }
