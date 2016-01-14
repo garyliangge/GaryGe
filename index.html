@@ -4,13 +4,17 @@
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
       <title>Gary Ge</title>
+
       <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'>
       <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media=screen>
       <link rel="stylesheet" href="stylesheets/font-awesome.min.css" type="text/css" media=screen>
       <link rel="stylesheet" href="stylesheets/gary_style.css" type="text/css" media=screen>
+
       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
       <script src="javascripts/main.js"></script>
+
       <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900|Josefin+Sans:400,700|Quicksand:400,700' rel='stylesheet' type='text/css'>  </head>
   <body id="body">
@@ -20,7 +24,7 @@
       <nav id="nav" class="transparent">
           <div id="navbar" role="navigation">
               <div id="nav-menu">
-                <button onclick="onMenuClicked()" Style="padding: 0; border: none; background: none;">
+                <button id="menu-button" onclick="onMenuClicked()">
                   <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
                 </button>
               </div>
@@ -35,19 +39,16 @@
 
       <!---Cover Menu-------->
 
-      <div id="menu" class="menu-collapsed">
-          <!-- <div id="menu-container"> -->
-            <ul id="menu-list">
-              <li><a id="homelink" href="#" class="viewing">Home</a></li>
-              <li><a id="projectslink" href="#">Projects</a></li>
-              <li><a id="researchlink" href="#">Research</a></li>
-              <li><a id="contactlink" href="#">Contact</a></li>
-            </ul>
-          <!-- </div> -->
+      <div id="menu" class="collapsed">
+          <ul id="menulist">
+            <li><a id="menu_homelink" href="#">Home</a></li>
+            <li><a id="menu_projectslink" href="#">Projects</a></li>
+            <li><a id="menu_researchlink" href="#">Research</a></li>
+            <li><a id="menu_contactlink" href="#">Contact</a></li>
+          </ul>
       </div>
 
       <!---Home Section-------->
-
       <div class="section" id="home">
           <div id="filter-white">
             <div id="name">

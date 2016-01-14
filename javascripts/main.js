@@ -2,6 +2,8 @@ $(document).ready(function()
 {
 
   window.onresize = checkResize;
+  $(window).scroll(onScroll);
+
   $("#navbar > ul > li > a").click(function(e) {
     // Prevent a page reload when a link is pressed
     e.preventDefault();
@@ -16,13 +18,21 @@ $(document).ready(function()
     goToByScroll(this.id);
   });
 
-  $(window).scroll(onScroll);
+  $("#menulist > li > a").click(function(e) {
+    // Prevent a page reload when a link is pressed
+    e.preventDefault();
+
+    onMenuClicked();
+    // Call the scroll function
+    goToByScroll(this.id.replace("menu_", ""));
+  });
 
   checkResize();
 
 });
 
 var menu_selected = false;
+var last_y = 0;
 
 function goToByScroll(id){
   // Remove "link" from the ID
@@ -45,15 +55,14 @@ function onScroll() {
 
   //Check active section
   var scrollPos = Math.floor($(document).scrollTop());
+
   $("#navbar a").each(function() {
-    var refId = $(this).attr("id");
-    var refSecId = $(this).attr("id");
-    refId = "#".concat(refId.replace("link", ""));
-    refSecId = "#".concat(refSecId.replace("link", "_body"))
-    var refElement = $(refId);
-    var refSecElement = $(refSecId);
-    if (Math.floor(refElement.position().top) <= scrollPos &&
-      Math.floor(refElement.position().top + refElement.height() + refSecElement.height()) > scrollPos) {
+    refId = "#".concat(this.id.replace("link", ""));
+    refSecId = "#".concat(this.id.replace("link", "_body"))
+    var refElem = $(refId);
+    var refSecElem = $(refSecId);
+    if (Math.floor(refElem.position().top) <= scrollPos &&
+      Math.floor(refElem.position().top + refElem.height() + refSecElem.height()) > scrollPos) {
       $("#navbar > ul > li > a").removeClass("viewing");
       $(this).addClass("viewing");
     } else {
@@ -61,7 +70,6 @@ function onScroll() {
     }
   });
 }
-
 
 function checkResize() {
   width = window.innerWidth;
@@ -100,15 +108,26 @@ function checkResize() {
 }
 
 function onMenuClicked() {
-  // alert(menu_selected);
+
+  $("#navbar a").each(function() {
+    menuItemID = "menu_" + this.id;
+    if ($(this).hasClass('viewing')) {
+      document.getElementById(menuItemID).style.color = "gold";
+    } else {
+      document.getElementById(menuItemID).style.color = "black";
+    }
+  });
+
   if(menu_selected) {
     $('body').removeClass("noscroll");
-    $('#menu').addClass("menu-collapsed");
+    $('#menu').addClass("collapsed");
     $('#nav').removeClass("hold-opaque");
     menu_selected = false;
+    window.scrollTo(0, last_y);
   } else {
+    last_y = Math.floor($(document).scrollTop());
     $('body').addClass("noscroll");
-    $('#menu').removeClass("menu-collapsed");
+    $('#menu').removeClass("collapsed");
     $('#nav').addClass("hold-opaque");
     menu_selected = true;
   }
