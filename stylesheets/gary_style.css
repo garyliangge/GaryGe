@@ -173,7 +173,6 @@ div#filter-white{
   position: absolute;
   left: 0px;
   top: 0px;
-  /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
   background-color: rgba(255, 255, 255, .1);
 }
 
@@ -197,7 +196,6 @@ a#resume{
   font-size: 18px;
   text-align: center;
   margin-top: 0vh;
-  background-color: rgba(0, 0, 0, 0);
   padding: 8px 35px;
   border: 3px solid white;
   font-family: 'Quicksand';
@@ -309,7 +307,6 @@ div#research_body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-  height: 875px;
   /*overflow: visible;*/
 }
 
@@ -323,11 +320,12 @@ div#filter-blue{
   background: linear-gradient(110deg, rgba(0, 130, 200, 0.7) 20%, rgba(10, 40, 100, 0.40) 80%);
 }
 
-.content{
+div#action_classification{
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 0px;
+  /*margin-top: 50px;*/
 }
 
 
@@ -348,7 +346,6 @@ div#filter-black{
   position: absolute;
   left: 0px;
   top: 0px;
-  /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
   background-color: rgba(0, 0, 0, .5)
 }
 

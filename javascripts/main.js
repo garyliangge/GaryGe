@@ -1,8 +1,8 @@
 $(document).ready(function()
 {
-
   window.onresize = checkResize;
   $(window).scroll(onScroll);
+  checkResize();
 
   $("#navbar > ul > li > a").click(function(e) {
     // Prevent a page reload when a link is pressed
@@ -21,16 +21,13 @@ $(document).ready(function()
   $("#menulist > li > a").click(function(e) {
     // Prevent a page reload when a link is pressed
     e.preventDefault();
-
     onMenuClicked();
     // Call the scroll function
     goToByScroll(this.id.replace("menu_", ""));
   });
-
-  checkResize();
-
 });
 
+// Variables for menu behavior
 var menu_selected = false;
 var last_y = 0;
 
@@ -52,17 +49,15 @@ function onScroll() {
     $('#nav').removeClass("transparent");
     $('#nav').addClass("opaque");
   }
-
-  //Check active section
+  // Check active section
   var scrollPos = Math.floor($(document).scrollTop());
-
   $("#navbar a").each(function() {
     refId = "#".concat(this.id.replace("link", ""));
     refSecId = "#".concat(this.id.replace("link", "_body"))
     var refElem = $(refId);
     var refSecElem = $(refSecId);
     if (Math.floor(refElem.position().top) <= scrollPos &&
-      Math.floor(refElem.position().top + refElem.height() + refSecElem.height()) > scrollPos) {
+        Math.floor(refElem.position().top + refElem.height() + refSecElem.height()) > scrollPos) {
       $("#navbar > ul > li > a").removeClass("viewing");
       $(this).addClass("viewing");
     } else {
@@ -74,41 +69,44 @@ function onScroll() {
 function checkResize() {
   width = window.innerWidth;
   height = window.innerHeight;
-  // alert("Ratio: " + (width/height) + " Width: " + width);
-  if ((width/height) < 1.5) {
-
-    document.getElementById("flowchart").style.display = "none";
-    document.getElementById("sbu_logo").style.width = width*.6+"px";
-    document.getElementById("research_description").style.width = width*.9+"px";
-    document.getElementById("publications").style.width = width*.9+"px";
-
-  } else {
-
-    document.getElementById("flowchart").style.display = "table";
-    document.getElementById("sbu_logo").style.width = width*.3+"px";
-    document.getElementById("research_description").style.width = width*.52+"px";
-    document.getElementById("publications").style.width = width*.7+"px";
-
-  }
-
-  //toggle navbar formats
+  // Toggle navbar formats
   if((width/height) < 1) {
     document.getElementById("navlist").style.display = "none";
     document.getElementById("nav-menu").style.display = "inline";
   } else {
     document.getElementById("navlist").style.display = "inline";
     document.getElementById("nav-menu").style.display = "none";
-    //Close dropdown menu, if open
+    // Close menu, if open
     menu_selected = true;
     onMenuClicked();
   }
-
-  //toggle chevron display
+  // Toggle chevron display
   document.getElementById("chevron").style.display = (width/height) < 1 ? "none" : "table";
+
+  // Adjust research section elements
+  if ((width/height) < 1.5) {
+    document.getElementById("flowchart").style.display = "none";
+    document.getElementById("sbu_logo").style.width = width*.6+"px";
+    document.getElementById("research_description").style.width = width*.9+"px";
+    document.getElementById("publications").style.width = width*.9+"px";
+  } else {
+    document.getElementById("flowchart").style.display = "table";
+    document.getElementById("sbu_logo").style.width = width*.3+"px";
+    document.getElementById("research_description").style.width = width*.52+"px";
+    document.getElementById("publications").style.width = width*.7+"px";
+  }
+
+  // Set research section height
+  research_height = Number($('#action_classification').css('height').replace("px", ""));
+  document.getElementById("research_body").style.height = (research_height + 30) + "px";
+  document.getElementById("action_classification").style.marginTop = "15px";
+  // alert("Green_section: " + $('#action_classification').css('height').replace("px", "") + " Research_body: " + document.getElementById("research_body").style.height);
+
+
 }
 
 function onMenuClicked() {
-
+  // Set menu item colors
   $("#navbar a").each(function() {
     menuItemID = "menu_" + this.id;
     if ($(this).hasClass('viewing')) {
@@ -117,7 +115,7 @@ function onMenuClicked() {
       document.getElementById(menuItemID).style.color = "black";
     }
   });
-
+  // Change format when menu is selected/deselcted
   if(menu_selected) {
     $('body').removeClass("noscroll");
     $('#menu').addClass("collapsed");
@@ -131,5 +129,4 @@ function onMenuClicked() {
     $('#nav').addClass("hold-opaque");
     menu_selected = true;
   }
-
 }
