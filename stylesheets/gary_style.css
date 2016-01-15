@@ -19,16 +19,17 @@ body.noscroll
 .section{
   width: 100%;
   height: 100%;
-	min-height:650px;
+	/*min-height: 100px;*/
+  height: 100vh;
   position: relative;
-  margin: 0px 0px;
+  /*margin: 0px 0px;*/
 }
 
 .divider{
   width: 100%;
   height: 30vh;
   position: relative;
-  margin: 0px 0px;
+  /*margin: 0px 0px;*/
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,28 +53,28 @@ a:hover, a:active, a:focus{
 #nav{
   width: 100%;
   position: fixed;
-  top: 0px;
-  right: 0px;
+  /*top: 0px;*/
+  /*right: 0px;*/
   padding: 10px;
   z-index: 2;
   font-family: 'Quicksand', sans-serif;
 }
 
 .transparent{
-  height: 11vh;
+  height: 60px;
   color: white;
   transition: 0.4s ease;
 }
 
 .opaque{
-  height: 8vh;
+  height: 45px;
   color: black;
   background-color: white;
   transition: 0.3s ease;
 }
 
 .hold-opaque{
-  height: 8vh;
+  height: 45px;
   color: black;
   background-color: white;
   /*transition: 0.3s ease;*/
@@ -94,14 +95,14 @@ a:hover, a:active, a:focus{
 }
 
 #nav-menu {
-  font-size: 4vh;
+  font-size: 20px;
   padding-right: 1vw;
 }
 
 #navlist {
   list-style-type: none;
-  margin: 0px 0px;
-  padding: 0px;
+  /*margin: 0px 0px;
+  padding: 0px;*/
 }
 
 #navlist li{
@@ -120,7 +121,6 @@ a:hover, a:active, a:focus{
 /*----------Menu Section----------*/
 
 #menu{
-  /*display: table;*/
   width: 100%;
   height: 100%;
   position: fixed;
@@ -182,12 +182,12 @@ div#name{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 23vh;
+  margin-top: 20px;
+  padding-top: 18vh;
   color: white;
   font-weight: 600;
   font-size: 135px;
   line-height: 135px;
-  padding-bottom: 0.5vh;
 }
 
 a#resume{
@@ -195,7 +195,6 @@ a#resume{
   line-height: 3;
   font-size: 18px;
   text-align: center;
-  margin-top: 0vh;
   padding: 8px 35px;
   border: 3px solid white;
   font-family: 'Quicksand';
@@ -212,7 +211,8 @@ div#chevron {
   position: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 16vh;
+  margin-top: 15vh;
+  padding-bottom: 6vh;
   color: white;
   text-align: center;
 }
@@ -226,7 +226,7 @@ i#chevron:hover {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   transform: scale(1.3);
-  transition: all 0.2s ease;
+  transition: 0.2s ease;
 }
 
 /*----------Projects Section----------*/
