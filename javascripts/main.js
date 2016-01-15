@@ -119,8 +119,10 @@ function setSectionHeights(){
   // Set home section height
   home_height = Number($('#header').css('height').replace("px", ""));
   $('#home').css("min-height", (home_height+20)+"px");
-
+  // Set projects section height
+  projects_height = Number($('#proj_list').css('height').replace("px", ""));
+  document.getElementById("projects_body").style.height = (projects_height+30) + "px";
   // Set research section height
   research_height = Number($('#action_classification').css('height').replace("px", ""));
-  document.getElementById("research_body").style.height = (research_height + 30) + "px";
+  document.getElementById("research_body").style.height = (research_height+30) + "px";
 }
