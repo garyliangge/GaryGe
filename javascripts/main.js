@@ -1,7 +1,7 @@
 $(document).ready(function()
 {
-  window.onresize = checkResize;
   window.onload = checkResize;
+  window.onresize = checkResize;
   $(window).scroll(onScroll);
 
   $("#navbar > ul > li > a").click(function(e) {

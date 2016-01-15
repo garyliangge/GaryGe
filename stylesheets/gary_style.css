@@ -320,6 +320,10 @@ div#filter-blue{
   background: linear-gradient(110deg, rgba(0, 130, 200, 0.7) 20%, rgba(10, 40, 100, 0.40) 80%);
 }
 
+#sbu_logo{
+  width: 30vw;
+}
+
 #flowchart{
   width: 600px;
 }
