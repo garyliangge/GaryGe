@@ -2,6 +2,7 @@ $(document).ready(function()
 {
   window.onload = checkResize;
   window.onresize = checkResize;
+  alert(document.documentElement.clientWidth + " " + $('#flowchart').css('width'));
   $(window).scroll(onScroll);
 
   $("#navbar > ul > li > a").click(function(e) {
@@ -67,7 +68,9 @@ function onScroll() {
 }
 
 function checkResize() {
-  ratio = (window.innerWidth/window.innerHeight) < 1 ? true : false;
+  // ratio = $(document).height() + 10
+  ratio =  document.documentElement.clientWidth <
+            10 + Number($('#flowchart').css('width').replace("px", "")) ? true : false;
   // Toggle navbar formats
   document.getElementById("navlist").style.display = ratio ? "none" : "inline";
   document.getElementById("nav-menu").style.display = ratio ? "inline" : "none";
