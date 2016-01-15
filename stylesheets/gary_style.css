@@ -320,12 +320,36 @@ div#filter-blue{
   background: linear-gradient(110deg, rgba(0, 130, 200, 0.7) 20%, rgba(10, 40, 100, 0.40) 80%);
 }
 
+#flowchart{
+  width: 600px;
+}
+
 div#action_classification{
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
-  /*margin-top: 50px;*/
+  margin-top: 20px;
+}
+
+div#research_title{
+  margin: auto 5px;
+}
+
+div#research_description{
+  display: table;
+  text-align: justify;
+  margin: auto auto;
+  padding: 5px;
+  font-size: 110%;
+  line-height: 130%;
+}
+
+div#publications{
+  text-align: justify;
+  display: table;
+  margin: auto auto;
+  padding: 5px;
+  font-size: 100%;
 }
 
 

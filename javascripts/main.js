@@ -1,8 +1,8 @@
 $(document).ready(function()
 {
   window.onresize = checkResize;
+  window.onload = checkResize;
   $(window).scroll(onScroll);
-  checkResize();
 
   $("#navbar > ul > li > a").click(function(e) {
     // Prevent a page reload when a link is pressed
@@ -67,42 +67,23 @@ function onScroll() {
 }
 
 function checkResize() {
-  width = window.innerWidth;
-  height = window.innerHeight;
+  ratio = (window.innerWidth/window.innerHeight) < 1 ? true : false;
   // Toggle navbar formats
-  if((width/height) < 1) {
-    document.getElementById("navlist").style.display = "none";
-    document.getElementById("nav-menu").style.display = "inline";
-  } else {
-    document.getElementById("navlist").style.display = "inline";
-    document.getElementById("nav-menu").style.display = "none";
-    // Close menu, if open
+  document.getElementById("navlist").style.display = ratio ? "none" : "inline";
+  document.getElementById("nav-menu").style.display = ratio ? "inline" : "none";
+  if(ratio) {
     menu_selected = true;
     onMenuClicked();
   }
   // Toggle chevron display
-  document.getElementById("chevron").style.display = (width/height) < 1 ? "none" : "table";
-
+  document.getElementById("chevron").style.display = ratio ? "none" : "table";
   // Adjust research section elements
-  if ((width/height) < 1.5) {
-    document.getElementById("flowchart").style.display = "none";
-    document.getElementById("sbu_logo").style.width = width*.6+"px";
-    document.getElementById("research_description").style.width = width*.9+"px";
-    document.getElementById("publications").style.width = width*.9+"px";
-  } else {
-    document.getElementById("flowchart").style.display = "table";
-    document.getElementById("sbu_logo").style.width = width*.3+"px";
-    document.getElementById("research_description").style.width = width*.52+"px";
-    document.getElementById("publications").style.width = width*.7+"px";
-  }
-
-  // Set research section height
-  research_height = Number($('#action_classification').css('height').replace("px", ""));
-  document.getElementById("research_body").style.height = (research_height + 30) + "px";
-  document.getElementById("action_classification").style.marginTop = "15px";
-  // alert("Green_section: " + $('#action_classification').css('height').replace("px", "") + " Research_body: " + document.getElementById("research_body").style.height);
-
-
+  document.getElementById("sbu_logo").style.width = ratio ? "60vw" : "30vw";
+  document.getElementById("flowchart").style.display = ratio ? "none" : "table";
+  document.getElementById("research_description").style.width = ratio ? "90vw" : $('#flowchart').css('width');
+  document.getElementById("publications").style.width = ratio ? "90vw" : $('#flowchart').css('width');
+  // Set Section Heights
+  setSectionHeights()
 }
 
 function onMenuClicked() {
@@ -129,4 +110,12 @@ function onMenuClicked() {
     $('#nav').addClass("hold-opaque");
     menu_selected = true;
   }
+}
+
+//<--------------Section Specific Code-------------->
+
+function setSectionHeights(){
+  // Set research section height
+  research_height = Number($('#action_classification').css('height').replace("px", ""));
+  document.getElementById("research_body").style.height = (research_height + 30) + "px";
 }
