@@ -71,7 +71,7 @@ function checkResize() {
   // Toggle navbar formats
   document.getElementById("navlist").style.display = ratio ? "none" : "inline";
   document.getElementById("nav-menu").style.display = ratio ? "inline" : "none";
-  if(ratio) {
+  if(!ratio) {
     menu_selected = true;
     onMenuClicked();
   }
