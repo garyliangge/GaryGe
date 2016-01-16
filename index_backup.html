@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="chrome=1">
+      <title>Gary Ge</title>
+      <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'>
+      <link rel="stylesheet" href="stylesheets/gary_style.css" type="text/css" media=screen>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+      <script src="javascripts/main.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900|Josefin+Sans:400,700|Quicksand:400,700' rel='stylesheet' type='text/css'>  </head>
+  <body id="body">
+
+      <!---Nav Section-------->
+
+      <nav id="nav" class="transparent">
+          <div id="navbar">
+              <ul class="navlist">
+                <li><a id="homelink" href="#" class="active">Home</a></li>
+                <li><a id="aboutlink" href="#">About</a></li>
+                <li><a id="researchlink" href="#">Research</a></li>
+                <li><a id="contactlink" href="#">Contact</a></li>
+              </ul>
+          </div>
+      </nav>
+
+      <!---Home Section-------->
+
+      <div class="section" id="home">
+          <div id="filter-none">
+              <div id=title>
+                  <div id="name">
+                      Gary Ge
+                  </div>
+                  <div id="description">
+                      EECS | University of California, Berkeley
+                  </div>
+              </div>
+              <div id="chevron" Style="color: white;">
+                  <a id="aboutlink" href="#"><span class="blinking">⌄</span></a>
+              </div>
+          </div>
+      </div>
+
+      <!---About Section-------->
+
+      <div class='section' id="about">
+          <div id="filter-white">
+            <div id="profile" Style="display: table;">
+                <img id="propic" src="images/profile_noborder.png">
+                <div id="bio">
+                    <div Style="color: gray; font-family: 'Roboto'; font-weight: 600; font-size: 40px; padding-bottom: 20px;">DESIGN &#8226; HACK &#8226; EXPLORE</div>
+                    Take a look :)
+                </div>
+                <div Style="text-align: center;"><a id="resume" href="documents/Resume.pdf" target="_blank">RESUME</a></div>
+            </div>
+          </div>
+      </div>
+
+      <!---Research Section-------->
+
+      <div class='section' id="research">
+          <div id="filter-blue">
+              <div class='content' Style="color: white;">
+                  <div Style="font-size: 40px; display: table; margin: auto auto; height: 100%; font-family: 'Quicksand';">
+                      Action Classification in Still Images Using Human Gaze
+                  </div>
+                  <div Style="font-size: 25px; display: table; margin: auto auto; padding: 5px; height: 100%;">
+                      <img src="images/logos/SB_logo.png" Style="max-width: 300px;">
+                  </div>
+                  <div Style="text-align: justify; width: 50%; display: table; margin: auto auto; padding: 5px; height: 100%; line-height: 120%;">
+                      Under the guidance of Kiwon Yun, Prof. Dimitris Samaras and Prof. Greg Zelinsky at Stony Brook University's Image Analysis Lab, I
+                      researched the application of human gaze data to computer vision algorithms for recognizing actions in still images. Using gaze data
+                      collected from 12 subjects with a tower-mounted eye tracker, I computed novel gaze features that, when used to train support vector
+                      machine classifiers, improved on those trained with state-of-the-art visual features. By blurring the border between psychology and
+                      computer vision, I uncovered new insights into the way humans interpret images while opening a new direction for the advancement of
+                      image analysis algorithms.
+                      <br>See below for publications.
+                  </div>
+                  <div Style="text-align: justify; width: 45%; display: table; margin: auto auto; padding: 5px; height: 100%;">
+                      <img src="images/research/flowchart_rounded.png">
+                  </div>
+                  <div Style="text-align: justify; width: 75%; display: table; margin: auto auto; padding: 10px; height: 100%;">
+                      <div Style="font-size: 25px;">Publications</div>
+                      <p>
+                          <div Style="color: gold;">Action Recognition in Still Images Using Human Eye Movements</div>
+                          <u>Gary L. Ge</u>, Kiwon Yun, Dimitris Samaras, and Gregory J. Zelinsky
+                          <br>The 2nd Vision Meets Cognition Workshop at Conference on Computer Vision and Pattern Recognition, CVPR 2015 (Boston/USA)
+                          <br>[<a href="documents/Action_Classification.pdf" Style="color: gold;" target="_blank">PDF</a>]
+                      </p>
+                      <p>
+                          <div Style="color: gold;">How We Look Tells Us What We Do: Action Recognition Using Human Gaze</div>
+                          Kiwon Yun, <u>Gary L. Ge</u>, Dimitris Samaras, and Gregory J. Zelinsky
+                          <br>Visual Science Society (VSS) 2015 (Florida/USA)
+                          <br>[<a href="documents/VSS_Abstract.pdf" Style="color: gold;" target="_blank">Abstract</a>][<a href="documents/VSS_Poster.pdf" Style="color: gold;" target="_blank">Poster</a>]
+                      </p>
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+      <!---Contact Section-------->
+
+      <div class='section' id='contact'>
+          <div id="filter-black">
+              <div Style="color: white; text-align: center; margin-top: 250px;">
+                  <div Style="font-size: 70px; font-family: 'Quicksand';">Let's connect.</div>
+              </div>
+              <div id="socialmedia"  style="position: relative; bottom:0px;">
+                  <a href="https://www.facebook.com/gary.ge.5" target="_blank"><img id="smlogo" src="images/logos/facebook.png"></a>
+                  <a href="https://www.linkedin.com/pub/gary-ge/b8/898/898" target="_blank"><img id="smlogo" src="images/logos/linkedin.png"></a>
+                  <a href="https://github.com/garyliangge" target="_blank"><img id="smlogo" src="images/logos/octocat.png"></a>
+                  <a href="mailto:garyliangge@berkeley.edu"><img id="smlogo" src="images/logos/gmail.png"></a>
+              </div>
+          </div>
+      </div>
+  </body>
+
+</html>

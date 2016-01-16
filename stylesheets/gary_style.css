@@ -1,0 +1,405 @@
+html{
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+body{
+  margin: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+body.noscroll
+{
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+}
+
+.section{
+  width: 100%;
+  height: 100%;
+	/*min-height: 100px;*/
+  height: 100vh;
+  position: relative;
+  /*margin: 0px 0px;*/
+}
+
+.divider{
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  /*margin: 0px 0px;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, a:active, a:focus{
+  text-decoration: none;
+  color: inherit;
+  outline: 0;
+}
+
+#nav{
+  width: 100%;
+  position: fixed;
+  /*top: 0px;*/
+  /*right: 0px;*/
+  padding: 10px;
+  z-index: 2;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.transparent{
+  height: 60px;
+  color: white;
+  transition: 0.4s ease;
+}
+
+.opaque{
+  height: 45px;
+  color: black;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+.hold-opaque{
+  height: 45px;
+  color: black;
+  background-color: white;
+  /*transition: 0.3s ease;*/
+}
+
+/*----------Navbar----------*/
+
+#navbar{
+  float: right;
+  opacity = 1;
+}
+
+#menu-button{
+  padding: 0;
+  outline: 0;
+  border: none;
+  background: none;
+}
+
+#nav-menu {
+  font-size: 20px;
+  padding-right: 1vw;
+}
+
+#navlist {
+  list-style-type: none;
+  /*margin: 0px 0px;
+  padding: 0px;*/
+}
+
+#navlist li{
+  display: inline;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 1;
+  font-size: 18px;
+}
+
+#navlist a:hover {
+  /*color: gold;*/
+  transition: 0.2s ease;
+}
+
+/*----------Menu Section----------*/
+
+#menu{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /*background-color: rgba(255, 255, 255, .6);*/
+  background-color: white;
+	min-height:650px;
+  z-index: 1;
+}
+
+#menu.collapsed{
+  display: none;
+}
+
+#menulist {
+  width: 50vw;
+  list-style-type: none;
+  margin: 20vh auto;
+  padding: 0px;
+  text-align: center;
+}
+
+#menulist li{
+  padding-top: 6vw;
+  opacity: 1;
+  font-size: 6vh;
+}
+
+#menulist a:hover {
+  /*color: gold;*/
+  transition: 0.2s ease;
+}
+
+.viewing, .viewing:focus{
+  color: gold;
+}
+/*----------Home Section----------*/
+
+div#home{
+  background: url("../images/backgrounds/sunset.jpg") center top no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div#filter-white{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+div#name{
+  width: 100%;
+  display: table;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  padding-top: 18vh;
+  color: white;
+  font-weight: 600;
+  font-size: 135px;
+  line-height: 135px;
+}
+
+a#resume{
+  color: white;
+  line-height: 3;
+  font-size: 18px;
+  text-align: center;
+  padding: 8px 35px;
+  border: 3px solid white;
+  font-family: 'Quicksand';
+  transition: all 0.2s ease;
+}
+
+a#resume:hover{
+  color: gray;
+  background-color: white;
+  transition: all 0.2s ease;
+}
+
+div#chevron {
+  position: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15vh;
+  padding-bottom: 6vh;
+  color: white;
+  text-align: center;
+}
+
+i#chevron{
+  font-size: 75px;
+  transition: all 0.2s ease;
+}
+
+i#chevron:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: 0.2s ease;
+}
+
+/*----------Projects Section----------*/
+
+div#projects_body{
+  background: url("../images/backgrounds/laptop.jpg") center top no-repeat fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div#filter-sepia{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /*background: linear-gradient(90deg, rgba(138, 120, 5, 0.560784) 10%, rgba(250, 250, 113, 0.139216) 90%);*/
+  background-color: rgba(112, 66, 20, .3)
+}
+
+div#proj_list{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.proj{
+  width: 90vw;
+  height: 240px;
+  color: white;
+  margin-bottom: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.proj_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  background-color: black;
+  font-family: "Josefin Sans";
+  font-size: 30px;
+}
+
+.proj_body{
+  height: 80%;
+  font-size: 16px;
+  padding-right: 15px;
+  line-height: 120%;
+  text-align: justify;
+}
+
+.proj_picture{
+  height: 100%;
+  margin-right: 15px;
+  float: left;
+}
+
+.proj_link{
+  color: white;
+  transition: all 0.1s ease;
+}
+
+.proj_link:hover{
+  color: rgba(160, 160, 160, 1);
+  transition: all 0.1s ease;
+}
+
+/*----------Research Section----------*/
+
+div#research_body{
+  background: url('../images/backgrounds/sbu2.jpg') center top no-repeat fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  /*overflow: visible;*/
+}
+
+div#filter-blue{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: linear-gradient(110deg, rgba(0, 130, 200, 0.7) 20%, rgba(10, 40, 100, 0.40) 80%);
+}
+
+#sbu_logo{
+  width: 30vw;
+}
+
+#flowchart{
+  width: 650px;
+}
+
+div#action_classification{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+div#research_title{
+  margin: auto 5px;
+}
+
+div#research_description{
+  display: table;
+  text-align: justify;
+  margin: auto auto;
+  padding: 5px;
+  font-size: 110%;
+  line-height: 130%;
+}
+
+div#publications{
+  text-align: justify;
+  display: table;
+  margin: auto auto;
+  padding: 5px;
+  font-size: 100%;
+}
+
+
+/*----------Contact Section----------*/
+
+div#contact_body{
+  background: url("../images/backgrounds/campanile.jpg") center top no-repeat fixed;
+  -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+div#filter-black{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: rgba(0, 0, 0, .5)
+}
+
+img#propic{
+  width: 280px;
+  height: 280px;
+}
+
+div#socialmedia {
+  position: absolute;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+img#smlogo {
+  width: 75px;
+  height: 75px;
+  margin: 10px 40px;
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+img#smlogo:hover {
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: all 0.2s ease;
+}
