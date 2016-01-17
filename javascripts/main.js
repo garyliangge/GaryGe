@@ -25,6 +25,9 @@ $(document).ready(function()
     // Call the scroll function
     goToByScroll(this.id.replace("menu_", ""));
   });
+  // checkResize();
+  // alert($('#projects_body').css('height')+" "+$('#research_body').css('height'));
+
 });
 
 // Variables for menu behavior
@@ -67,8 +70,10 @@ function onScroll() {
 }
 
 function checkResize() {
+  var width = document.documentElement.clientWidth;
+  var height = document.documentElement.clientHeight;
   // Condition for reformatting various elements
-  ratio =  (document.documentElement.clientWidth < 10 + Number($('#flowchart').css('width').replace("px", "")));
+  ratio =  (width < 10 + Number($('#flowchart').css('width').replace("px", "")));
   // Toggle navbar formats
   document.getElementById("navlist").style.display = ratio ? "none" : "inline";
   document.getElementById("nav-menu").style.display = ratio ? "inline" : "none";
@@ -78,6 +83,12 @@ function checkResize() {
   }
   // Toggle chevron display
   document.getElementById("chevron").style.display = ratio ? "none" : "table";
+  // Adjust projects section elements
+  var myElements = document.querySelectorAll(".proj");
+  for (var i = 0; i < myElements.length; i++) {
+      myElements[i].style.width = (width/height) < 1 ? "90vw" : "40vw";
+      myElements[i].style.float = (width/height) < 1 ? "none" : "left";
+  }
   // Adjust research section elements
   document.getElementById("sbu_logo").style.width = ratio ? "60vw" : "30vw";
   document.getElementById("flowchart").style.display = ratio ? "none" : "table";
@@ -121,7 +132,7 @@ function setSectionHeights(){
   $('#home').css("min-height", (home_height+20)+"px");
   // Set projects section height
   projects_height = Number($('#proj_list').css('height').replace("px", ""));
-  document.getElementById("projects_body").style.height = (projects_height+30) + "px";
+  document.getElementById("projects_body").style.height = (projects_height) + "px";
   // Set research section height
   research_height = Number($('#action_classification').css('height').replace("px", ""));
   document.getElementById("research_body").style.height = (research_height+30) + "px";
