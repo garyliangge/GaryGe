@@ -84,18 +84,24 @@ function checkResize() {
   // Toggle chevron display
   document.getElementById("chevron").style.display = ratio ? "none" : "table";
   // Adjust projects section elements
-  var myElements = document.querySelectorAll(".proj");
-  for (var i = 0; i < myElements.length; i++) {
-      myElements[i].style.width = (width/height) < 1 ? "90vw" : "40vw";
-      myElements[i].style.float = (width/height) < 1 ? "none" : "left";
+  var myProjects = document.querySelectorAll(".proj");
+  for (var i = 0; i < myProjects.length; i++) {
+      myProjects[i].style.width = (width/height) < 1 ? "90vw" : "40vw";
+      myProjects[i].style.float = (width/height) < 1 ? "none" : "left";
   }
   // Adjust research section elements
   document.getElementById("sbu_logo").style.width = ratio ? "60vw" : "30vw";
   document.getElementById("flowchart").style.display = ratio ? "none" : "table";
   document.getElementById("research_description").style.width = ratio ? "90vw" : $('#flowchart').css('width');
   document.getElementById("publications").style.width = ratio ? "90vw" : $('#flowchart').css('width');
+  // Adjust contact section elements
+  var smrows = document.querySelectorAll(".smrow");
+  for (var i = 0; i < smrows.length; i++) {
+      // smrows[i].style.width = (width/height) < 1 ? "80vw" : "30vw";
+      smrows[i].style.float = (width/height) < 1.2 ? "none" : "left";
+  }
   // Set Section Heights
-  setSectionHeights()
+  setSectionHeights(width, height);
 }
 
 function onMenuClicked() {
@@ -126,14 +132,26 @@ function onMenuClicked() {
 
 //<--------------Section Specific Code-------------->
 
-function setSectionHeights(){
+function setSectionHeights(width, height) {
   // Set home section height
   home_height = Number($('#header').css('height').replace("px", ""));
   $('#home').css("min-height", (home_height+20)+"px");
   // Set projects section height
+  var maxProjectHeight = 0;
+  var descriptions = document.querySelectorAll(".proj_description");
+  for (var i = 0; i < descriptions.length; i++) {
+      maxProjectHeight = Math.max(maxProjectHeight, Number($(descriptions[i]).css("height").replace("px", "")));
+  }
+  var projHeightThresh = (width/height) < 1 ? 0 : maxProjectHeight;
+  for (var i = 0; i < descriptions.length; i++) {
+      $(descriptions[i]).css("min-height", projHeightThresh+"px");
+  }
   projects_height = Number($('#proj_list').css('height').replace("px", ""));
-  document.getElementById("projects_body").style.height = (projects_height) + "px";
+  document.getElementById("projects_body").style.height = projects_height + "px";
   // Set research section height
   research_height = Number($('#action_classification').css('height').replace("px", ""));
   document.getElementById("research_body").style.height = (research_height+30) + "px";
+  // Set contact section height
+  contact_height = Number($('#bio').css('height').replace("px", ""));
+  document.getElementById("contact_body").style.height = (contact_height) + "px";
 }

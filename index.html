@@ -22,15 +22,15 @@
 
       <!---Nav Section-------->
 
-      <nav id="nav" class="transparent">
+      <nav id="nav" class='transparent'>
           <div id="navbar" role="navigation">
               <div id="nav-menu">
                 <button id="menu-button" onclick="onMenuClicked()">
-                  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+                  <span class='glyphicon glyphicon-menu-hamburger' aria-hidden="true"></span>
                 </button>
               </div>
               <ul id="navlist">
-                <li><a id="homelink" href="#" class="viewing">Home</a></li>
+                <li><a id="homelink" href="#" class='viewing'>Home</a></li>
                 <li><a id="projectslink" href="#">Projects</a></li>
                 <li><a id="researchlink" href="#">Research</a></li>
                 <li><a id="contactlink" href="#">Contact</a></li>
@@ -50,7 +50,7 @@
       </div>
 
       <!---Home Section-------->
-      <div class="section" id="home">
+      <div class='section' id="home">
           <div id="filter-white">
             <div id="header">
               <div id="name">
@@ -67,36 +67,36 @@
       </div>
 
       <!---Projects Section-------->
-      <div class="divider" id="projects">
+      <div class='divider' id="projects">
           PROJECTS
       </div>
 
       <div class='section' id="projects_body">
           <div id="filter-sepia">
               <div id="proj_list" Style = "background-color: none;">
-                  <div class="proj">
-                      <div class="proj_title">
+                  <div class='proj'>
+                      <div class='proj_title'>
                           Personal Website
                       </div>
-                      <div class="proj_body">
-                          <div class="proj_description">
-                              <img class="proj_picture" src="images/projects/garyge.png">
+                      <div class='proj_body'>
+                          <div class='proj_description'>
+                              <img class='proj_picture' src="images/projects/garyge.png">
                               <br>You're at my personal website right now! This was the my first foray into web
                               development and  contains links to my resume and other relevant documents, descriptions
                               of my projects and research, and contact information.
                           </div>
                       </div>
                   </div>
-                  <div class="proj">
-                      <div class="proj_title">
-                          <a class="proj_link" href="http://pleasetutor.me:3000/" target="_blank">
+                  <div class='proj'>
+                      <div class='proj_title'>
+                          <a class='proj_link' href="http://pleasetutor.me:3000/" target="_blank">
                               PleaseTutorMe
-                              <span class="glyphicon glyphicon-arrow-right" aria-hidden="true" Style="font-size: 18px;"></span>
+                              <span class='glyphicon glyphicon-arrow-right' aria-hidden="true" Style="font-size: 18px;"></span>
                           </a>
                       </div>
-                      <div class="proj_body">
-                          <div class="proj_description">
-                              <img class="proj_picture" src="images/projects/pleasetutorme.png">
+                      <div class='proj_body'>
+                          <div class='proj_description'>
+                              <img class='proj_picture' src="images/projects/pleasetutorme.png">
                               <br>PleaseTutorMe is a web application designed to bring available tutors to clients
                               within minutes. Users can search by subject for tutors, or offer to tutor others in subjects
                               they are qualified to teach. A Google Maps UI allows users to find nearby available tutors
@@ -110,7 +110,7 @@
       </div>
 
       <!---Research Section-------->
-      <div class="divider" id="research">
+      <div class='divider' id="research">
           RESEARCH
       </div>
 
@@ -155,20 +155,26 @@
       </div>
 
       <!---Contact Section-------->
-      <div class="divider" id="contact">
+      <div class='divider' id="contact">
           CONTACT
       </div>
 
       <div class='section' id="contact_body">
           <div id="filter-black">
-              <div Style="display: table; margin: auto auto; padding-top: 15vh;">
-                  <img id="propic" src="images/profile4.png">
-              </div>
-              <div id="socialmedia"  style="position: relative; bottom:0px;">
-                  <a href="https://www.facebook.com/gary.ge.5" target="_blank"><img id="smlogo" src="images/logos/facebook.png"></a>
-                  <a href="https://www.linkedin.com/pub/gary-ge/b8/898/898" target="_blank"><img id="smlogo" src="images/logos/linkedin.png"></a>
-                  <a href="https://github.com/garyliangge" target="_blank"><img id="smlogo" src="images/logos/octocat.png"></a>
-                  <a href="mailto:garyliangge@berkeley.edu"><img id="smlogo" src="images/logos/gmail.png"></a>
+              <div id="bio">
+                  <div Style="display: table; margin: auto auto; padding: 40px 40px;">
+                      <img id="propic" src="images/profile4.png">
+                  </div>
+                  <div id="socialmedia">
+                      <div class='smrow'>
+                          <a href="https://www.facebook.com/gary.ge.5" target="_blank"><img id="smlogo" src="images/logos/facebook.png"></a>
+                          <a href="https://www.linkedin.com/pub/gary-ge/b8/898/898" target="_blank"><img id="smlogo" src="images/logos/linkedin.png"></a>
+                      </div>
+                      <div class='smrow'>
+                          <a href="https://github.com/garyliangge" target="_blank"><img id="smlogo" src="images/logos/octocat.png"></a>
+                          <a href="mailto:garyliangge@berkeley.edu"><img id="smlogo" src="images/logos/gmail.png"></a>
+                      </div>
+                  </div>
               </div>
           </div>
       </div>

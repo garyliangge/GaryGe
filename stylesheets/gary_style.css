@@ -257,7 +257,7 @@ div#proj_list{
   float: left;
   width: 40vw;
   color: white;
-  margin: 4vw 2vw;
+  margin: 6vh 3vw;
 }
 
 .proj_title{
@@ -277,15 +277,15 @@ div#proj_list{
 }
 
 .proj_description{
-  min-height: 420px;
+  /*min-height: 430px;*/
   line-height: 120%;
   background-color: rgba(0, 0, 0, 0.8);
-  padding: 15px;
+  padding: 20px;
 }
 
 .proj_picture{
   width: 100%;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   float: left;
 }
 
@@ -356,7 +356,6 @@ div#publications{
   font-size: 100%;
 }
 
-
 /*----------Contact Section----------*/
 
 div#contact_body{
@@ -378,22 +377,27 @@ div#filter-black{
 }
 
 img#propic{
-  width: 280px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
 }
 
 div#socialmedia {
-  position: absolute;
+  position: relative;
   display: table;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.smrow{
+  float: left;
 }
 
 img#smlogo {
-  width: 75px;
-  height: 75px;
-  margin: 10px 40px;
+  float: left;
+  height: 160px;
+  width: 160px;
+  padding: 35px 35px;
   opacity: 1;
   transition: all 0.2s ease;
 }
