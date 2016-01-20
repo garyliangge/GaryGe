@@ -114,7 +114,7 @@ function onMenuClicked() {
       document.getElementById(menuItemID).style.color = "black";
     }
   });
-  // Change format when menu is selected/deselcted
+  // Change format when menu is selected/deselected
   if(menu_selected) {
     $('body').removeClass("noscroll");
     $('#menu').addClass("collapsed");
