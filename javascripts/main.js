@@ -78,6 +78,7 @@ function checkResize() {
   document.getElementById("navlist").style.display = ratio ? "none" : "inline";
   document.getElementById("nav-menu").style.display = ratio ? "inline" : "none";
   if(!ratio) {
+    last_y = Math.floor($(document).scrollTop());
     menu_selected = true;
     onMenuClicked();
   }
