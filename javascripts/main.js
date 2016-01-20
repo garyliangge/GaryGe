@@ -8,7 +8,7 @@ $(document).ready(function()
     // Prevent a page reload when a link is pressed
     e.preventDefault();
     // Call the scroll function
-    alert(this.id);
+    // alert(this.id);
     goToByScroll(this.id);
   });
 
