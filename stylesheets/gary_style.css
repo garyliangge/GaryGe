@@ -150,7 +150,7 @@ a:hover, a:active, a:focus{
   transition: 0.2s ease;
 }
 
-.viewing, .viewing:focus{
+.viewing, .viewing:focus, .viewing:hover{
   color: gold;
 }
 /*----------Home Section----------*/

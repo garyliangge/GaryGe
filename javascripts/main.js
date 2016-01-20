@@ -55,7 +55,7 @@ function onScroll() {
   }
   // Check active section
   var scrollPos = Math.floor($(document).scrollTop());
-  $("#navbar a").each(function() {
+  $("#navbar > ul > li > a").each(function() {
     refId = "#".concat(this.id.replace("link", ""));
     refSecId = "#".concat(this.id.replace("link", "_body"))
     var refElem = $(refId);
@@ -65,9 +65,6 @@ function onScroll() {
       $("#navbar > ul > li > a").removeClass("viewing");
       $(this).addClass("viewing");
     }
-    // } else {
-    //   $(this).removeClass("viewing");
-    // }
   });
 }
 
