@@ -8,6 +8,7 @@ $(document).ready(function()
     // Prevent a page reload when a link is pressed
     e.preventDefault();
     // Call the scroll function
+    alert(this.id);
     goToByScroll(this.id);
   });
 
@@ -15,7 +16,7 @@ $(document).ready(function()
     // Prevent a page reload when a link is pressed
     e.preventDefault();
     // Call the scroll function
-    goToByScroll(this.id);
+    goToByScroll(this.id.replace("chevron_", ""));
   });
 
   $("#menulist > li > a").click(function(e) {

@@ -279,7 +279,7 @@ div#proj_list{
 .proj_description{
   /*min-height: 430px;*/
   line-height: 120%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.75);
   padding: 20px;
 }
 
