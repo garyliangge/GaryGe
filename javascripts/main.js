@@ -64,9 +64,10 @@ function onScroll() {
         Math.floor(refElem.position().top + refElem.height() + refSecElem.height()) > scrollPos) {
       $("#navbar > ul > li > a").removeClass("viewing");
       $(this).addClass("viewing");
-    } else {
-      $(this).removeClass("viewing");
     }
+    // } else {
+    //   $(this).removeClass("viewing");
+    // }
   });
 }
 
