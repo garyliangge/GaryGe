@@ -35,7 +35,7 @@ $(document).ready(function()
 var menu_selected = false;
 var last_y = 0;
 
-function goToByScroll(id){
+function goToByScroll(id) {
   // Remove "link" from the ID
   id = id.replace("link", "");
   // Scroll
