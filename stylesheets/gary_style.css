@@ -148,14 +148,6 @@ a:hover, a:active, a:focus{
 }
 /*----------Home Section----------*/
 
-div#home{
-  background: url("../images/backgrounds/sunset.jpg") center top no-repeat fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 div#filter-white{
   display: block;
   width: 100%;
@@ -225,14 +217,6 @@ i#chevron:hover {
 
 /*----------Projects Section----------*/
 
-div#projects_body{
-  background: url("../images/backgrounds/laptop.jpg") center top no-repeat fixed;
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
 div#filter-sepia{
   display: block;
   width: 100%;
@@ -298,14 +282,6 @@ div#proj_list{
 
 /*----------Research Section----------*/
 
-div#research_body{
-  background: url('../images/backgrounds/sbu2.jpg') center top no-repeat fixed;
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-
 div#filter-gunmetal{
   display: block;
   width: 100%;
@@ -354,14 +330,6 @@ div#publications{
 }
 
 /*----------Contact Section----------*/
-
-div#contact_body{
-  background: url("../images/backgrounds/campanile.jpg") center top no-repeat fixed;
-  -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
 
 div#filter-black{
   display: block;
