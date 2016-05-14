@@ -1,6 +1,12 @@
 $(document).ready(function()
 {
-  window.onload = checkResize;
+
+  window.onload = function () {
+    $('body').addClass('loaded');
+    checkResize();
+    alert("ayyy lmao");
+  }
+
   window.onresize = checkResize;
   $(window).scroll(onScroll);
 
