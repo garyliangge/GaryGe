@@ -4,7 +4,6 @@ $(document).ready(function()
   window.onload = function () {
     $('body').addClass('loaded');
     checkResize();
-    alert("ayyy lmao");
   }
 
   window.onresize = checkResize;
