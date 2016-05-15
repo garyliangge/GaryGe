@@ -48,7 +48,7 @@ body.noscroll{
     height: 180px;
     margin: -115px 0 0 -115px;
     border-radius: 50%;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     border-top-color: #3498db;
 
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
@@ -65,7 +65,7 @@ body.noscroll{
     height: 150px;
     margin: -100px 0 0 -100px;
     border-radius: 50%;
-    border: 3px solid transparent;
+    border: 5px solid transparent;
     border-top-color: #D4AF37;
 
     -webkit-animation: spin 1.5s linear reverse infinite; /* Chrome, Opera 15+, Safari 5+ */
