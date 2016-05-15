@@ -23,9 +23,6 @@ body.noscroll{
 
 
 
-
-
-
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -34,55 +31,52 @@ body.noscroll{
     height: 100%;
     z-index: 1000;
 }
-#loader {
-    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+
+#loader0 {
+    z-index: 1001;
     display: block;
     position: relative;
     left: 50%;
     top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
+    width: 70px;
+    height: 70px;
+    margin: -60px 0 0 -60px;
+}
+
+#loader1 {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 180px;
+    height: 180px;
+    margin: -115px 0 0 -115px;
     border-radius: 50%;
     border: 3px solid transparent;
+    /*border-top-color: #3498db;*/
     border-top-color: #3498db;
 
-    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-}
-
-h1 {
-    color: #EEEEEE;
-}
-
-#loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #e74c3c;
-
-    -webkit-animation: spin 3s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-    animation: spin 3s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
-}
-
-#loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #f9c922;
-
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
-      animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    animation: spin 1.5s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+}
+
+#loader2 {
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -100px 0 0 -100px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #D4AF37;
+    /*border-top-color: #ffffff;*/
+
+    -webkit-animation: spin 1.5s linear reverse infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 1.5s linear reverse infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
 }
 
 @-webkit-keyframes spin {
@@ -116,7 +110,7 @@ h1 {
     top: 0;
     width: 51%;
     height: 100%;
-    background: #222222;
+    background: #43464B;
     z-index: 1000;
 }
  
@@ -135,7 +129,7 @@ h1 {
     max-width: 978px;
 }
 
-.loaded #loader {
+.loaded .loader {
     opacity: 0;
     -webkit-transition: all 0.3s ease-out; 
             transition: all 0.3s ease-out;
