@@ -15,12 +15,7 @@ body.noscroll{
     width: 100%;
 }
 
-
-
-
-
-
-
+/****************** P R E L O A D E R *********************/
 
 
 #loader-wrapper {
@@ -33,7 +28,7 @@ body.noscroll{
 }
 
 #loader0 {
-    z-index: 1001;
+    z-index: 1001; /* anything higher than z-index: 1000 of .loader-section */
     display: block;
     position: relative;
     left: 50%;
@@ -54,7 +49,6 @@ body.noscroll{
     margin: -115px 0 0 -115px;
     border-radius: 50%;
     border: 3px solid transparent;
-    /*border-top-color: #3498db;*/
     border-top-color: #3498db;
 
     -webkit-animation: spin 1.5s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
@@ -73,7 +67,6 @@ body.noscroll{
     border-radius: 50%;
     border: 3px solid transparent;
     border-top-color: #D4AF37;
-    /*border-top-color: #ffffff;*/
 
     -webkit-animation: spin 1.5s linear reverse infinite; /* Chrome, Opera 15+, Safari 5+ */
     animation: spin 1.5s linear reverse infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
@@ -163,25 +156,8 @@ body.noscroll{
 .no-js #loader-wrapper {
     display: none;
 }
-.no-js h1 {
-    color: #222222;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/****************** C O N T E N T *********************/
 
 .section{
   width: 100%;
