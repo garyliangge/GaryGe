@@ -286,31 +286,38 @@
                           </div>
                       </div>
                       <?php include('contactform.php') ?>
-                      <form id="htmlform" name="htmlform" method="post" action="https://formspree.io/garyliangge@gmail.com">
+                      <form id="htmlform" name="htmlform" method="post" action="index.php">
                           <div class="form-group">
                             <label for="first_name">First Name *</label>
                             <input type="text" class="form-control" id="firstName" name="first_name" maxlength="50" size="30" placeholder="First">
+                            <?php echo "<p class='text-danger'>$errFirstName</p>";?>
                           </div>
                           <div class="form-group">
                             <label for="last_name">Last Name *</label>
                             <input type="text" class="form-control" id="last_name" name="last_name" maxlength="50" size="30" placeholder="Last">
+                            <?php echo "<p class='text-danger'>$errLastName</p>";?>
                           </div>
                           <div class="form-group">
                             <label for="email">Email Address *</label>
                             <input type="email" class="form-control" id="email" name="email" maxlength="80" size="30" placeholder="Email">
+                            <?php echo "<p class='text-danger'>$errEmail</p>";?>
                           </div>
                           <div class="form-group">
                             <label for="message">Message *</label>
                             <textarea class="form-control" id="message" name="message" maxlength="1000" rows="3"></textarea>
+                            <?php echo "<p class='text-danger'>$errMessage</p>";?>
                           </div>
-                          <!-- <div class="form-group">
+                          <div class="form-group">
                             <label for="human">3 + 5 = ? *</label>
                             <input type="text" class="form-control" id="human" name="human" maxlength="30" size="30">
                             <?php echo "<p class='text-danger'>$errHuman</p>";?>
-                          </div> -->
+                          </div>
                           <div style='margin-bottom: 15px;'>
                             <input id="submit" class="btn btn-primary" name="submit" type="submit" value="Send">
                           </div>
+                          <div class="form-group">
+                        			<?php echo $result;?>
+                      	  </div>
                       </form>
                   </div>
               </div>
