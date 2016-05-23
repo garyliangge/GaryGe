@@ -81,7 +81,7 @@ function checkResize() {
   // Toggle navbar formats
   document.getElementById("navlist").style.display = ratio ? "none" : "inline";
   document.getElementById("nav-menu").style.display = ratio ? "inline" : "none";
-  if(!ratio) {
+  if (!ratio) {
     last_y = Math.floor($(document).scrollTop());
     menu_selected = true;
     onMenuClicked();
@@ -94,8 +94,16 @@ function checkResize() {
       myProjects[i].style.width = (width/height) < 1 ? "90vw" : "40vw";
       myProjects[i].style.float = (width/height) < 1 ? "none" : "left";
   }
+  // Adjust about section elements
+  if (ratio) {
+      $('div[class^="about_item"]').addClass("mobile");
+      $('img[class^="about_item"]').addClass("mobile");
+  } else {
+      $('div[class^="about_item"]').removeClass("mobile");
+      $('img[class^="about_item"]').removeClass("mobile");
+  }
   // Adjust research section elements
-  document.getElementById("sbu_logo").style.width = ratio ? "60vw" : "30vw";
+  // document.getElementById("sbu_logo").style.width = ratio ? "60vw" : "30vw";
   document.getElementById("flowchart").style.display = ratio ? "none" : "table";
   document.getElementById("research_description").style.width = ratio ? "90vw" : $('#flowchart').css('width');
   document.getElementById("publications").style.width = ratio ? "90vw" : $('#flowchart').css('width');
@@ -157,6 +165,6 @@ function setSectionHeights(width, height) {
   research_height = Number($('#action_classification').css('height').replace("px", ""));
   document.getElementById("research_body").style.height = (research_height+30) + "px";
   // Set contact section height
-  contact_height = Number($('#bio').css('height').replace("px", ""));
+  contact_height = Number($('#smlinks').css('height').replace("px", ""));
   document.getElementById("contact_body").style.height = (contact_height) + "px";
 }
