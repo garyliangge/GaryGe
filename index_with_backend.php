@@ -166,9 +166,6 @@
       <div class='section' id="projects_body">
           <div id="filter-sepia">
 
-
-
-
               <div id="proj_list" Style = "background-color: none;">
                   <div class='proj'>
                       <div class='proj_title'>
@@ -257,78 +254,75 @@
       </div>
 
       <div class='section' id="contact_body">
-          <!-- <div id="filter-black"> -->
-              <div id='contact_container' style='height: auto;'>
-
-                  <div id="contactform">
-                      <div id="contact_section_text">
-                          <div style='font-size: 65px; font-family: Josefin Sans;'>
-                              Hello.
-                          </div>
-                          <div>
-                              <p>A simple hello can lead to a million things. Ask about my work, talk shop, meet me for coffee, chat about life, or just say hi.
-                                 Send a message to connect.</p>
-                              <p>Or, explore the links below to find out more about me.</p>
-                          </div>
-                          <div id="smlinks">
-                              <a href="https://www.facebook.com/gary.ge.5" target="_blank">
-                                <i class="fa fa-facebook-square fa-2x smlogo" aria-hidden="true"></i>
-                              </a>
-                              <a href="https://www.linkedin.com/pub/gary-ge/b8/898/898" target="_blank">
-                                <i class="fa fa-linkedin-square fa-2x smlogo" aria-hidden="true"></i>
-                              </a>
-                              <a href="https://github.com/garyliangge" target="_blank">
-                                <i class="fa fa-github-square fa-2x smlogo" aria-hidden="true"></i>
-                              </a>
-                              <a href="mailto:garyliangge@berkeley.edu">
-                                <i class="fa fa-envelope-square fa-2x smlogo" aria-hidden="true"></i>
-                              </a>
-                          </div>
+          <div id='contact_container' style='height: auto;'>
+              <div id="contactform">
+                  <div id="contact_section_text">
+                      <div style='font-size: 65px; font-family: Josefin Sans;'>
+                          Hello.
                       </div>
-                      <?php include('contactform.php') ?>
-                      <form id="htmlform" name="htmlform" method="post" action="index.php">
-                          <div class="form-group">
-                            <label for="first_name">First Name *</label>
-                            <input type="text" class="form-control" id="firstName" name="first_name" maxlength="50" size="30" placeholder="First">
-                            <?php echo "<p class='text-danger'>$errFirstName</p>";?>
-                          </div>
-                          <div class="form-group">
-                            <label for="last_name">Last Name *</label>
-                            <input type="text" class="form-control" id="last_name" name="last_name" maxlength="50" size="30" placeholder="Last">
-                            <?php echo "<p class='text-danger'>$errLastName</p>";?>
-                          </div>
-                          <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" class="form-control" id="email" name="email" maxlength="80" size="30" placeholder="Email">
-                            <?php echo "<p class='text-danger'>$errEmail</p>";?>
-                          </div>
-                          <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea class="form-control" id="message" name="message" maxlength="1000" rows="3"></textarea>
-                            <?php echo "<p class='text-danger'>$errMessage</p>";?>
-                          </div>
-                          <div class="form-group">
-                            <label for="human">3 + 5 = ? *</label>
-                            <input type="text" class="form-control" id="human" name="human" maxlength="30" size="30">
-                            <?php echo "<p class='text-danger'>$errHuman</p>";?>
-                          </div>
-                          <div style='margin-bottom: 15px;'>
-                            <input id="submit" class="btn btn-primary" name="submit" type="submit" value="Send">
-                          </div>
-                          <div class="form-group">
-                        			<?php echo $result;?>
-                      	  </div>
-                      </form>
+                      <div>
+                          <p>A simple hello can lead to a million things. Ask about my work, talk shop, meet me for coffee, chat about life, or just say hi.
+                             Send a message to connect.</p>
+                          <p>Or, explore the links below to find out more about me.</p>
+                      </div>
+                      <div id="smlinks">
+                          <a href="https://www.facebook.com/gary.ge.5" target="_blank">
+                            <i class="fa fa-facebook-square fa-2x smlogo" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://www.linkedin.com/pub/gary-ge/b8/898/898" target="_blank">
+                            <i class="fa fa-linkedin-square fa-2x smlogo" aria-hidden="true"></i>
+                          </a>
+                          <a href="https://github.com/garyliangge" target="_blank">
+                            <i class="fa fa-github-square fa-2x smlogo" aria-hidden="true"></i>
+                          </a>
+                          <a href="mailto:garyliangge@berkeley.edu">
+                            <i class="fa fa-envelope-square fa-2x smlogo" aria-hidden="true"></i>
+                          </a>
+                      </div>
                   </div>
+                  <?php include('contactform.php') ?>
+                  <form id="htmlform" name="htmlform" method="post" action="index.php">
+                      <div class="form-group">
+                        <label for="first_name">First Name *</label>
+                        <input type="text" class="form-control" id="firstName" name="first_name" maxlength="50" size="30" placeholder="First">
+                        <?php echo "<p class='text-danger'>$errFirstName</p>";?>
+                      </div>
+                      <div class="form-group">
+                        <label for="last_name">Last Name *</label>
+                        <input type="text" class="form-control" id="last_name" name="last_name" maxlength="50" size="30" placeholder="Last">
+                        <?php echo "<p class='text-danger'>$errLastName</p>";?>
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" class="form-control" id="email" name="email" maxlength="80" size="30" placeholder="Email">
+                        <?php echo "<p class='text-danger'>$errEmail</p>";?>
+                      </div>
+                      <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea class="form-control" id="message" name="message" maxlength="1000" rows="3"></textarea>
+                        <?php echo "<p class='text-danger'>$errMessage</p>";?>
+                      </div>
+                      <div class="form-group">
+                        <label for="human">3 + 5 = ? *</label>
+                        <input type="text" class="form-control" id="human" name="human" maxlength="30" size="30">
+                        <?php echo "<p class='text-danger'>$errHuman</p>";?>
+                      </div>
+                      <div style='margin-bottom: 15px;'>
+                        <input id="submit" class="btn btn-primary" name="submit" type="submit" value="Send">
+                      </div>
+                      <div class="form-group">
+                    			<?php echo $result;?>
+                  	  </div>
+                  </form>
               </div>
+          </div>
 
-              <div id="footer">
-                  <img id="gary_logo" src="images/favicon.png">
-                  <div id="copyright">
-                      © 2016 Gary Ge
-                  </div>
+          <div id="footer">
+              <img id="gary_logo" src="images/favicon.png">
+              <div id="copyright">
+                  © 2016 Gary Ge
               </div>
-          <!-- </div> -->
+          </div>
       </div>
   </body>
 
