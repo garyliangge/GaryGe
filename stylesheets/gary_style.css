@@ -331,7 +331,7 @@ div#name{
   letter-spacing: 8px;
 }
 
-a#resume{
+.boxbutton{
   color: white;
   line-height: 3;
   font-size: 18px;
@@ -485,9 +485,6 @@ div#proj_list{
 
 .proj_body{
   margin: auto auto;
-  /*font-size: 16px;*/
-  /*text-align: justify;*/
-  /*letter-spacing: .5px;*/
 }
 
 .proj_description{
@@ -555,7 +552,6 @@ div#research_description{
 }
 
 div#publications{
-  /*text-align: justify;*/
   display: table;
   margin: auto auto;
   padding: 5px;
@@ -618,24 +614,6 @@ div#contact_section_text {
   opacity: 0.5;
   transition: all 0.2s ease;
 }
-
-/*a#send{
-  color: white;
-  line-height: 3;
-  font-size: 18px;
-  font-family: 'Quicksand';
-  text-align: center;
-  letter-spacing: 3px;
-  padding: 8px 35px;
-  border: 3px solid white;
-  transition: all 0.2s ease;
-}
-
-a#send:hover{
-  color: gray;
-  background-color: white;
-  transition: all 0.2s ease;
-}*/
 
 form#htmlform {
   width: 50vw;
