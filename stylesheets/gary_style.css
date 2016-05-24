@@ -6,7 +6,7 @@ html{
 
 body{
   margin: 0;
-  font-family: 'Avenir';
+  font-family: Avenir;
 }
 
 body.noscroll{
@@ -22,7 +22,12 @@ body.noscroll{
 
 @font-face {
   font-family: Avenir;
-  src: url('../fonts/AvenirLTStd-Light.otf');
+  src: url('../fonts/Avenir-Light.ttf');
+  /*src: url('../fonts/AvenirLTStd-Light.otf');*/
+}
+@font-face {
+  font-family: Arapey;
+  src: url('../fonts/Arapey-Italic.ttf');
 }
 
 
@@ -167,6 +172,32 @@ body.noscroll{
 
 /****************** C O N T E N T *********************/
 
+/* Horizontal lines flanking header text */
+.spanhead {
+ overflow: hidden;
+ text-align: center;
+}
+
+.spanhead:before, .spanhead:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+
+.spanhead:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+
+.spanhead:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+
 .section{
   width: 100%;
   height: 100%;
@@ -183,11 +214,16 @@ body.noscroll{
   justify-content: center;
   color: black;
   background-color: white;
-  font-family: "Arapey";
-  font-size: 50px;
+  font-family: Arapey;
+  /*font-family: Avenir;*/
+  font-size: 40px;
   font-weight: 600;
   border-top:2px solid black;
   border-bottom: 2px solid black;
+}
+
+.divider_text{
+  width: 40%;
 }
 
 a{
@@ -324,18 +360,18 @@ div#name{
   margin-right: auto;
   margin-top: 30vh;
   color: white;
-  font-family: 'Josefin Sans';
+  font-family: Josefin Sans;
   font-weight: 600;
   font-size: 125px;
   line-height: 125px;
   letter-spacing: 8px;
 }
 
-.boxbutton{
+.boxbutton {
   color: white;
   line-height: 3;
   font-size: 18px;
-  font-family: 'Quicksand';
+  font-family: Quicksand;
   text-align: center;
   letter-spacing: 3px;
   padding: 8px 35px;
@@ -343,7 +379,7 @@ div#name{
   transition: all 0.2s ease;
 }
 
-a#resume:hover{
+.boxbutton:hover {
   color: gray;
   background-color: white;
   transition: all 0.2s ease;
@@ -428,7 +464,7 @@ img#propic {
 }
 
 .about_item_title {
-  font-family: "Quicksand";
+  font-family: Quicksand;
   font-size: 26px;
   padding-bottom: 5px;
 }
@@ -479,7 +515,7 @@ div#proj_list{
   height: 50px;
   padding-top: 5px;
   background-color: black;
-  font-family: "Quicksand";
+  font-family: Quicksand;
   font-size: 30px;
 }
 
@@ -540,7 +576,7 @@ div#action_classification{
 
 div#research_title{
   margin: auto 5px;
-  font-family: "Josefin Sans";
+  font-family: Josefin Sans;
 }
 
 div#research_description{
