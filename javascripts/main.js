@@ -94,6 +94,12 @@ function checkResize() {
       myProjects[i].style.width = (width/height) < 1 ? "90vw" : "40vw";
       myProjects[i].style.float = (width/height) < 1 ? "none" : "left";
   }
+  // Adjust dividers
+  if (ratio) {
+      $('div[class^="spanhead"]').addClass("mobile");
+  } else {
+      $('div[class^="spanhead"]').removeClass("mobile");
+  }
   // Adjust about section elements
   if (ratio) {
       $('div[class^="about_item"]').addClass("mobile");

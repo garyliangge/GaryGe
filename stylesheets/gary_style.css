@@ -198,6 +198,10 @@ body.noscroll{
  margin-right: -50%;
 }
 
+.spanhead.mobile {
+ visibility: none;
+}
+
 .section{
   width: 100%;
   height: 100%;
