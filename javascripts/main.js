@@ -96,9 +96,9 @@ function checkResize() {
   }
   // Adjust dividers
   if (ratio) {
-      $('div[class^="spanhead"]').addClass("mobile");
+      $('div[class^="divider_text"]').removeClass("spanhead");
   } else {
-      $('div[class^="spanhead"]').removeClass("mobile");
+      $('div[class^="divider_text"]').addClass("spanhead");
   }
   // Adjust about section elements
   if (ratio) {
