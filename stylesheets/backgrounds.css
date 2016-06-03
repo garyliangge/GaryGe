@@ -4,6 +4,8 @@ div#home{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 div#about_body{
@@ -13,23 +15,29 @@ div#about_body{
 div#projects_body{
   background: url("../images/backgrounds/laptop.jpg") center top no-repeat fixed;
   -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 div#research_body{
   background: url('../images/backgrounds/sbu2.jpg') center top no-repeat fixed;
   -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 
 div#contact_body{
   background: url("../images/backgrounds/campanile.jpg") center top no-repeat fixed;
   -webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
