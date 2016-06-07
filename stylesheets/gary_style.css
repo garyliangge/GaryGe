@@ -30,6 +30,37 @@ body.noscroll{
   src: url('../fonts/Arapey-Italic.ttf');
 }
 
+/* Josephin Sans */
+@font-face {
+  font-family: Josefin Sans;
+  src: url('../fonts/JosefinSans-Regular.ttf');
+}
+@font-face {
+  font-family: Josefin Sans;
+  src: url('../fonts/JosefinSans-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Josefin Sans;
+  src: url('../fonts/JosefinSans-Italic.ttf');
+  font-style: italic;
+}
+
+/* Quicksand */
+@font-face {
+  font-family: Quicksand;
+  src: url('../fonts/Quicksand-Regular.ttf');
+}
+@font-face {
+  font-family: Quicksand;
+  src: url('../fonts/Quicksand-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: Quicksand-Light;
+  src: url('../fonts/Quicksand-Light.ttf');
+}
+
 
 /****************** P R E L O A D E R *********************/
 
