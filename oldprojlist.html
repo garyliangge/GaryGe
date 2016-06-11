@@ -1,0 +1,77 @@
+<div id="proj_list" Style = "background-color: none;">
+    <div class='proj'>
+        <div class='proj_title'>
+            Personal Website
+        </div>
+        <div class='proj_body'>
+            <div class='proj_description'>
+                <img class='proj_picture' src="images/projects/garyge.png">
+                <br>You're at my personal website right now! This was the my first foray into web
+                development and  contains links to my resume and other relevant documents, descriptions
+                of my projects and research, and contact information.
+            </div>
+        </div>
+    </div>
+    <div class='proj'>
+        <div class='proj_title'>
+            <!-- <a class='proj_link' href="http://pleasetutor.me:3000/" target="_blank"> -->
+                PleaseTutorMe
+                <!-- <span class='glyphicon glyphicon-arrow-right' aria-hidden="true" Style="font-size: 18px;"></span> -->
+            <!-- </a> -->
+        </div>
+        <div class='proj_body'>
+            <div class='proj_description'>
+                <img class='proj_picture' src="images/projects/pleasetutorme.png">
+                <br>PleaseTutorMe is a web application designed to bring available tutors to clients
+                within minutes. Users can search by subject for tutors, or offer to tutor others in subjects
+                they are qualified to teach. A Google Maps UI allows users to find nearby available tutors
+                and decide on a convenient meetup location. When users request a tutoring session, the tutor
+                is notified via text using Twilio. <i>Created at HackingEDU 2015 in San Mateo, CA.</i>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+.proj{
+  float: left;
+  width: 40vw;
+  color: white;
+  margin: 6vh 3vw;
+}
+
+.proj_title{
+  margin: auto auto;
+  text-align: center;
+  height: 50px;
+  padding-top: 5px;
+  background-color: black;
+  font-family: Quicksand;
+  font-size: 30px;
+}
+
+.proj_body{
+  margin: auto auto;
+}
+
+.proj_description{
+  /*min-height: 430px;*/
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px;
+}
+
+.proj_picture{
+  width: 100%;
+  padding-bottom: 20px;
+  float: left;
+}
+
+.proj_link{
+  color: white;
+  transition: all 0.1s ease;
+}
+
+.proj_link:hover{
+  color: rgba(160, 160, 160, 1);
+  transition: all 0.1s ease;
+}

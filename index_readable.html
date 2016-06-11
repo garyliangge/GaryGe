@@ -10,13 +10,13 @@
     <link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico'>
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css" type="text/css" media=screen>
     <link rel="stylesheet" href="stylesheets/font-awesome.min.css" type="text/css" media=screen>
-    <link rel="stylesheet" href="stylesheets/gary_style.min.css" type="text/css" media=screen>
-    <link rel="stylesheet" href="stylesheets/backgrounds.min.css" type="text/css" media=screen>
+    <link rel="stylesheet" href="stylesheets/gary_style.css" type="text/css" media=screen>
+    <link rel="stylesheet" href="stylesheets/backgrounds.css" type="text/css" media=screen>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <script src="javascripts/main.js"></script>
 
-    <script>
+    <!-- <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -24,7 +24,7 @@
 
       ga('create', 'UA-78882740-1', 'auto');
       ga('send', 'pageview');
-    </script>
+    </script> -->
 
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   </head>
@@ -87,15 +87,9 @@
       </div>
 
       <!---About Section-------->
-      <div class='divider' id="about">
-        <div class='divider_text spanhead'>
-          Gary Ge
-        </div>
-      </div>
-
-      <div class='section' id="about_body">
+      <div class='section' id="about">
         <div style="display: table; margin: auto auto; padding: 40px 40px;">
-          <img id="propic" src="images/profile4.png">
+          <img id="propic" src="images/profile6.png">
         </div>
 
         <div id='education_list' style="padding-bottom: 5vh; border-bottom: 1.5px solid rgb(138,136,126);">
@@ -170,108 +164,147 @@
       </div>
       <!---Projects Section-------->
       <div class='divider' id="projects">
-        <div class='divider_text spanhead'>
-          Projects
+        <div class='divider_filter'>
+          <div class='divider_text spanhead white'>
+            Projects
+          </div>
         </div>
       </div>
 
       <div class='section background' id="projects_body">
-          <div id="filter-sepia">
-
-              <div id="proj_list" Style = "background-color: none;">
-                  <div class='proj'>
-                      <div class='proj_title'>
-                          Personal Website
-                      </div>
-                      <div class='proj_body'>
-                          <div class='proj_description'>
-                              <img class='proj_picture' src="images/projects/garyge.png">
-                              <br>You're at my personal website right now! This was the my first foray into web
-                              development and  contains links to my resume and other relevant documents, descriptions
-                              of my projects and research, and contact information.
-                          </div>
-                      </div>
-                  </div>
-                  <div class='proj'>
-                      <div class='proj_title'>
-                          <!-- <a class='proj_link' href="http://pleasetutor.me:3000/" target="_blank"> -->
-                              PleaseTutorMe
-                              <!-- <span class='glyphicon glyphicon-arrow-right' aria-hidden="true" Style="font-size: 18px;"></span> -->
-                          <!-- </a> -->
-                      </div>
-                      <div class='proj_body'>
-                          <div class='proj_description'>
-                              <img class='proj_picture' src="images/projects/pleasetutorme.png">
-                              <br>PleaseTutorMe is a web application designed to bring available tutors to clients
-                              within minutes. Users can search by subject for tutors, or offer to tutor others in subjects
-                              they are qualified to teach. A Google Maps UI allows users to find nearby available tutors
-                              and decide on a convenient meetup location. When users request a tutoring session, the tutor
-                              is notified via text using Twilio. <i>Created at HackingEDU 2015 in San Mateo, CA.</i>
-                          </div>
-                      </div>
-                  </div>
+          <div id="proj_list" Style = "background-color: none;">
+            <div class='proj_item'>
+              <div class='proj_item_logo_container'>
+                <img class='proj_item_image' src="images/projects/garyge.png">
               </div>
+              <div class='proj_item_content'>
+                <div class='proj_item_title'>
+                  Personal Website
+                </div>
+                <div class='proj_item_description'>
+                  You're at my personal website right now! This was the my first foray into web
+                  development and  contains links to my resume and other relevant documents, descriptions
+                  of my projects and research, and contact information.
+                </div>
+              </div>
+            </div>
+
+            <div class='proj_item'>
+              <div class='proj_item_logo_container'>
+                <img class='proj_item_image' src="images/projects/pleasetutorme.png">
+              </div>
+              <div class='proj_item_content'>
+                <div class='proj_item_title'>
+                  PleaseTutorMe
+                </div>
+                <div class='proj_item_description'>
+                  PleaseTutorMe is a web application designed to bring available tutors to clients
+                  within minutes. Users can search by subject for tutors, or offer to tutor others in subjects
+                  they are qualified to teach. A Google Maps UI allows users to find nearby available tutors
+                  and decide on a convenient meetup location. When users request a tutoring session, the tutor
+                  is notified via text using Twilio. <i>Created at HackingEDU 2015 in San Mateo, CA.</i>
+                </div>
+              </div>
+            </div>
+
+            <div class='proj_item'>
+              <div class='proj_item_logo_container'>
+                <img class='proj_item_image' src="images/projects/bearmaps.png">
+              </div>
+              <div class='proj_item_content'>
+                <div class='proj_item_title'>
+                  <a class='proj_item_link' href="http://bearmaps2016.herokuapp.com/" target="_blank">
+                      Bearmaps
+                      <span class='glyphicon glyphicon-arrow-right' aria-hidden="true" Style="font-size: 14px;"></span>
+                  </a>
+                </div>
+                <div class='proj_item_description'>
+                  Bearmaps is a mapping and route-finding web application I created for my data structures and
+                  algorithms course. It maps the city of Berkeley and surrounding areas in the East Bay using tile
+                  images and location data from the OpenStreetMap project.
+                </div>
+              </div>
+            </div>
           </div>
       </div>
 
       <!---Research Section-------->
       <div class='divider' id="research">
-        <div class='divider_text spanhead'>
-          Research
+        <div class='divider_filter'>
+          <div class='divider_text spanhead white'>
+            Research
+          </div>
         </div>
       </div>
 
       <div class='section background' id="research_body">
-          <div id="filter-gunmetal">
-              <div id="action_classification" Style="color: white;">
-                  <div id="research_title" Style="text-align: center; font-size: 38px; display: table; padding: 5vh 0vw;">
-                      Action Classification in Still Images Using Human Gaze
+          <div id="action_classification">
+              <div id="research_title">
+                  Action Classification in Still Images Using Human Gaze
+              </div>
+              <div Style="display: table; margin: auto auto; padding: 5px;">
+                  <img id="sbu_logo" src="images/logos/SB_logo.png">
+              </div>
+              <div id="research_description">
+                  Under the guidance of Kiwon Yun, Profs. Dimitris Samaras and Greg Zelinsky at the SBU Image Analysis Lab,
+                  I researched the application of human gaze data to computer vision algorithms for action recognizing in
+                  still images. Using gaze data collected with a tower-mounted eye tracker, I created novel gaze features that,
+                  when used to train SVM classifiers, improved on those trained with state-of-the-art visual features. Moreover,
+                  I identified behaviorally meaningful groups of action classes that elicit similar gaze patterns. By
+                  blurring the border between psychology and computer vision, I uncovered new insights into the way humans
+                  interpret images while opening a new direction for the advancement of image analysis algorithms.
+              </div>
+              <div id="flowchart_container">
+                  <img id="flowchart" src="images/research/flowchart_rounded.png">
+                  <div id="flowchart_caption">
+                    Convolutional neural network (CNN) features were derived from images to train a baseline action classifier,
+                    while novel gaze features were derived from subject data to create a gaze action classifier. Confidence scores
+                    from both classifiers were weighted and combined to make a final classification decision.
                   </div>
-                  <!-- <div Style="display: table; margin: auto auto; padding: 5px;">
-                      <img id="sbu_logo" src="images/logos/SB_log2o.png">
-                  </div> -->
-                  <div id="research_description">
-                      Under the guidance of Kiwon Yun, Profs. Dimitris Samaras and Greg Zelinsky at the SBU Image Analysis Lab,
-                      I researched the application of human gaze data to computer vision algorithms for action recognizing in
-                      still images. Using gaze data collected with a tower-mounted eye tracker, I created novel gaze features that,
-                      when used to train SVM classifiers, improved on those trained with state-of-the-art visual features. Moreover,
-                      I identified behaviorally meaningful groups of action classes that elicit similar gaze patterns.By
-                      blurring the border between psychology and computer vision, I uncovered new insights into the way humans
-                      interpret images while opening a new direction for the advancement of image analysis algorithms.
+              </div>
+              <div id="aggregate_container">
+                  <img id="aggregate" src="images/research/aggregate_rounded.png">
+                  <div id="aggregate_caption">
+                    Gaze data collected from human subjects were used to derive novel features and train a gaze action classifier.
+                    Confidence scores from the gaze classifier were combined with those from a baseline classifier to make a final
+                    classification decision.
                   </div>
-                  <div Style="text-align: justify; width: 45%; display: table; margin: auto auto; padding: 5px;">
-                      <img id="flowchart" src="images/research/flowchart_rounded.png">
-                  </div>
-                  <div id="publications">
-                      <div Style="font-size: 25px;">Publications</div>
-                      <p>
-                          <div Style="color: gold;">Action Recognition in Still Images Using Human Eye Movements</div>
-                          <u>Gary Ge</u>, Kiwon Yun, Dimitris Samaras, and Gregory J. Zelinsky
-                          <br>The 2nd Vision Meets Cognition Workshop at Conference on Computer Vision and Pattern Recognition (CVPR) 2015 (Boston/USA)
-                          <br>[<a href="http://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W06/papers/Ge_Action_Classification_in_2015_CVPR_paper.pdf" Style="color: gold;" target="_blank"><u>PDF</u></a>]
-                      </p>
-                      <p>
-                          <div Style="color: gold;">How We Look Tells Us What We Do: Action Recognition Using Human Gaze</div>
-                          Kiwon Yun, <u>Gary Ge</u>, Dimitris Samaras, and Gregory J. Zelinsky
-                          <br>Vision Sciences Society (VSS) 2015 (Florida/USA)
-                          <br>[<a href="http://jov.arvojournals.org/article.aspx?articleid=2433159" Style="color: gold;" target="_blank"><u>Abstract</u></a>]
-                              [<a href="documents/VSS_Poster.pdf" Style="color: gold;" target="_blank"><u>Poster</u></a>]
-                      </p>
-                  </div>
+              </div>
+              <div id="publications">
+                  <div Style="font-size: 25px;">Publications</div>
+                  <p>
+                      <div Style="padding-bottom: 1vh; font-size: 16px; color: gold;">
+                        Action Recognition in Still Images Using Human Eye Movements
+                      </div>
+                      <u>Gary Ge</u>, Kiwon Yun, Dimitris Samaras, and Gregory J. Zelinsky
+                      <br>The 2nd Vision Meets Cognition Workshop at Conference on Computer Vision and Pattern Recognition (CVPR) 2015 (Boston/USA)
+                      <br>[<a href="http://www.cv-foundation.org/openaccess/content_cvpr_workshops_2015/W06/papers/Ge_Action_Classification_in_2015_CVPR_paper.pdf" Style="color: gold;" target="_blank"><u>PDF</u></a>]
+                  </p>
+                  <p>
+                      <div Style="padding-bottom: 1vh; font-size: 16px; color: gold;">
+                        How We Look Tells Us What We Do: Action Recognition Using Human Gaze
+                      </div>
+                      Kiwon Yun, <u>Gary Ge</u>, Dimitris Samaras, and Gregory J. Zelinsky
+                      <br>Vision Sciences Society (VSS) 2015 (Florida/USA)
+                      <br>[<a href="http://jov.arvojournals.org/article.aspx?articleid=2433159" Style="color: gold;" target="_blank"><u>Abstract</u></a>]
+                          [<a href="documents/VSS_Poster.pdf" Style="color: gold;" target="_blank"><u>Poster</u></a>]
+                  </p>
               </div>
           </div>
       </div>
 
       <!---Contact Section-------->
       <div class='divider' id="contact">
-        <div class='divider_text spanhead'>
-          Contact
+        <div class='divider_filter'>
+          <div class='divider_text spanhead white'>
+            Contact
+          </div>
         </div>
       </div>
 
       <div class='section background' id="contact_body">
-          <div id='contact_container' style='height: auto;'>
-              <div id="contactform">
+          <div id='contact_body' style='height: auto;'>
+              <div id="contact_section">
                   <div id="contact_section_text">
                       <div style='font-size: 65px; font-family: Josefin Sans;'>
                           Hello.
@@ -296,7 +329,7 @@
                           </a>
                       </div>
                   </div>
-                  <form id="htmlform" name="htmlform" method="post" action="https://formspree.io/garyliangge@gmail.com">
+                  <form id="contact_section_form" name="contact_section_form" method="post" action="https://formspree.io/garyliangge@gmail.com">
                       <div class="form-group">
                         <label for="first_name">First Name *</label>
                         <input type="text" class="form-control" id="firstName" name="first_name" maxlength="50" size="30" placeholder="First">

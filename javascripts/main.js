@@ -78,6 +78,7 @@ function checkResize() {
   var height = document.documentElement.clientHeight;
   // Condition for reformatting various elements
   ratio =  (width < 10 + Number($('#flowchart').css('width').replace("px", "")));
+  proj_ratio = (width < height * 1.4);
   // Toggle navbar formats
   document.getElementById("navlist").style.display = ratio ? "none" : "inline";
   document.getElementById("nav-menu").style.display = ratio ? "inline" : "none";
@@ -88,12 +89,6 @@ function checkResize() {
   }
   // Toggle chevron display
   document.getElementById("chevron").style.display = ratio ? "none" : "table";
-  // Adjust projects section elements
-  var myProjects = document.querySelectorAll(".proj");
-  for (var i = 0; i < myProjects.length; i++) {
-      myProjects[i].style.width = (width/height) < 1 ? "90vw" : "40vw";
-      myProjects[i].style.float = (width/height) < 1 ? "none" : "left";
-  }
   // Adjust dividers
   if (ratio) {
       $('div[class^="divider_text"]').removeClass("spanhead");
@@ -108,9 +103,18 @@ function checkResize() {
       $('div[class^="about_item"]').removeClass("mobile");
       $('img[class^="about_item"]').removeClass("mobile");
   }
+  // Adjust projects section elements
+  if (proj_ratio) {
+      $('div[class^="proj_item"]').addClass("mobile");
+      $('img[class^="proj_item"]').addClass("mobile");
+  } else {
+      $('div[class^="proj_item"]').removeClass("mobile");
+      $('img[class^="proj_item"]').removeClass("mobile");
+  }
   // Adjust research section elements
-  // document.getElementById("sbu_logo").style.width = ratio ? "60vw" : "30vw";
-  document.getElementById("flowchart").style.display = ratio ? "none" : "table";
+  document.getElementById("sbu_logo").style.width = ratio ? "60vw" : "30vw";
+  document.getElementById("flowchart_container").style.display = ratio ? "none" : "table";
+  document.getElementById("aggregate_container").style.display = ratio ? "table" : "none";
   document.getElementById("research_description").style.width = ratio ? "90vw" : $('#flowchart').css('width');
   document.getElementById("publications").style.width = ratio ? "90vw" : $('#flowchart').css('width');
   // Adjust contact section elements
@@ -118,6 +122,13 @@ function checkResize() {
   for (var i = 0; i < smrows.length; i++) {
       // smrows[i].style.width = (width/height) < 1 ? "80vw" : "30vw";
       smrows[i].style.float = (width/height) < 1.2 ? "none" : "left";
+  }
+  if (ratio) {
+      $('div[id^="contact_section"]').addClass("mobile");
+      $('form[id^="contact_section"]').addClass("mobile");
+  } else {
+      $('div[id^="contact_section"]').removeClass("mobile");
+      $('form[id^="contact_section"]').removeClass("mobile");
   }
   // Set Section Heights
   setSectionHeights(width, height);
